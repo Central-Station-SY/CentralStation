@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/CentralStation/static/css/main.890941ac.css",
-    "main.js": "/CentralStation/static/js/main.812e72c7.js",
+    "main.css": "/CentralStation/static/css/main.c2e90eb6.css",
+    "main.js": "/CentralStation/static/js/main.1e68af22.js",
     "static/js/453.a6a97343.chunk.js": "/CentralStation/static/js/453.a6a97343.chunk.js",
-    "static/media/background.jpeg": "/CentralStation/static/media/background.cf0a61968cf1addeb372.jpeg",
+    "static/media/backgrounds.jpeg": "/CentralStation/static/media/backgrounds.71d993673b263ca48783.jpeg",
+    "static/media/background.jpeg": "/CentralStation/static/media/background.3d52347438753a3dd61f.jpeg",
     "static/media/about.jpg": "/CentralStation/static/media/about.7882b8d333d20fe609a0.jpg",
     "static/media/f5.png": "/CentralStation/static/media/f5.bdb24a6bfa2491d23209.png",
     "static/media/f1.png": "/CentralStation/static/media/f1.17f63e75a79fc7a8740c.png",
@@ -22,12 +23,12 @@
     "static/media/o1.jpg": "/CentralStation/static/media/o1.62a8c9e1282c80ea35f9.jpg",
     "static/media/favicon.png": "/CentralStation/static/media/favicon.ca482020a991f1ade248.png",
     "index.html": "/CentralStation/index.html",
-    "main.890941ac.css.map": "/CentralStation/static/css/main.890941ac.css.map",
-    "main.812e72c7.js.map": "/CentralStation/static/js/main.812e72c7.js.map",
+    "main.c2e90eb6.css.map": "/CentralStation/static/css/main.c2e90eb6.css.map",
+    "main.1e68af22.js.map": "/CentralStation/static/js/main.1e68af22.js.map",
     "453.a6a97343.chunk.js.map": "/CentralStation/static/js/453.a6a97343.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.890941ac.css",
-    "static/js/main.812e72c7.js"
+    "static/css/main.c2e90eb6.css",
+    "static/js/main.1e68af22.js"
   ]
 }
