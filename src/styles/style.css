@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
-@import url("../assets/fonts/VINTAGE COLLEGE DEPT_DEMO_OUTLINE.OTF");
+/* @import url("../assets/fonts/vintage_college_dept_demo_outline-webfont.woff"); */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -664,6 +664,7 @@ a:focus {
   background-size: cover;
   background-position: center; 
   color: #EFF1DC;
+  background-repeat :repeat-x
 }
 
 .about_section .row {
@@ -782,6 +783,9 @@ a:focus {
   height: 345px;
   border-radius: 10px;
   overflow: hidden;
+  .leaflet-control-attribution {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+  }
 }
 
 .book_section .map_container #googleMap {

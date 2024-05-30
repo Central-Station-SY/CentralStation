@@ -89,8 +89,8 @@
   }
 
   .modal__close-wrapper {
-    right: -20px;
-    top: -30px;
+    right: 6px;
+    top: 3px;
   }
 
   .modal__close-icon {

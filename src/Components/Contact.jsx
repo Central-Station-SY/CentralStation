@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef } from "react";
+import React from "react";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import { motion } from "framer-motion";
@@ -111,10 +111,12 @@ export default function Contact() {
             <motion.div className="map_container">
               <motion.div id="googleMap">
                 <MapContainer
+                  className="leaflet-control-attribution"
                   center={[33.515989, 36.3156141]}
                   zoom={20}
                   scrollWheelZoom={false}
-                  style={{ height: 340}}
+                  style={{ height: 340 }}
+                  zoomControl={false}
                 >
                   <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
