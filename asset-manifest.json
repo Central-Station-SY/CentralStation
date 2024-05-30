@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/CentralStation/static/css/main.e2d7cafa.css",
+    "main.js": "/CentralStation/static/js/main.812e72c7.js",
+    "static/js/453.a6a97343.chunk.js": "/CentralStation/static/js/453.a6a97343.chunk.js",
+    "static/media/background.jpeg": "/CentralStation/static/media/background.cf0a61968cf1addeb372.jpeg",
+    "static/media/about.jpg": "/CentralStation/static/media/about.7882b8d333d20fe609a0.jpg",
+    "static/media/f5.png": "/CentralStation/static/media/f5.bdb24a6bfa2491d23209.png",
+    "static/media/f1.png": "/CentralStation/static/media/f1.17f63e75a79fc7a8740c.png",
+    "static/media/f6.png": "/CentralStation/static/media/f6.b64aa1807ae7647f37c8.png",
+    "static/media/f3.png": "/CentralStation/static/media/f3.326f89cfe13b0082e3b5.png",
+    "static/media/f4.png": "/CentralStation/static/media/f4.25a01dcd448e21154653.png",
+    "static/media/hero-bg.jpg": "/CentralStation/static/media/hero-bg.ac596bd69d11364d39b2.jpg",
+    "static/media/f9.png": "/CentralStation/static/media/f9.ee51242ed11eb5c32770.png",
+    "static/media/central.jpeg": "/CentralStation/static/media/central.d5b40658d8e5cf0b7b90.jpeg",
+    "static/media/f7.png": "/CentralStation/static/media/f7.8bd1009d295dee9d0e59.png",
+    "static/media/f8.png": "/CentralStation/static/media/f8.bbf75915b57d5c41997b.png",
+    "static/media/f2.png": "/CentralStation/static/media/f2.9157aed0d4393c8ed4ab.png",
+    "static/media/logo.jpg": "/CentralStation/static/media/logo.166e524a3b3ce7a15aa3.jpg",
+    "static/media/logoDark.png": "/CentralStation/static/media/logoDark.d6bd4a1a5e172f6a020e.png",
+    "static/media/o2.jpg": "/CentralStation/static/media/o2.b61e08068c07743d3080.jpg",
+    "static/media/o1.jpg": "/CentralStation/static/media/o1.62a8c9e1282c80ea35f9.jpg",
+    "static/media/favicon.png": "/CentralStation/static/media/favicon.ca482020a991f1ade248.png",
+    "index.html": "/CentralStation/index.html",
+    "main.e2d7cafa.css.map": "/CentralStation/static/css/main.e2d7cafa.css.map",
+    "main.812e72c7.js.map": "/CentralStation/static/js/main.812e72c7.js.map",
+    "453.a6a97343.chunk.js.map": "/CentralStation/static/js/453.a6a97343.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2d7cafa.css",
+    "static/js/main.812e72c7.js"
+  ]
+}
