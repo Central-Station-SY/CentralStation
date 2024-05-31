@@ -47,7 +47,7 @@ export default function Menu() {
     } else {
       setShowCategory(true);
       setShowItem(false);
-      window.history.pushState({}, "", "#");
+      window.history.pushState({}, "", "");
     }
   }, [isActiveCategory]);
 
