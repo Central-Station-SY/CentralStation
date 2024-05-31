@@ -3,10 +3,8 @@ import "./styles/responsive.css";
 import "./App.css";
 import Main from "./Components/Main";
 import Menu from "./Components/Menu";
-import Offer from "./Components/Offer";
 import About from "./Components/About";
 import Footer from "./Components/Footer";
-import Opinion from "./Components/Opinion";
 import Header from "./Components/Header";
 import Contact from "./Components/Contact";
 function App() {
@@ -14,7 +12,7 @@ function App() {
     <div className="App">
       <Header />
       <Main />
-      <Offer />
+      {/* <Offer /> */}
       <Menu />
       <About />
       <Contact />

@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { data } from "../assets/data";
-import Card from "./Card";
+import React from "react";
 import { motion } from "framer-motion";
 
 function CategoryCard({
