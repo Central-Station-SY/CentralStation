@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
-/* @import url("../assets/fonts/vintage_college_dept_demo_outline-webfont.woff"); */
+/* @import url("../assets/fonts/VINTAGE_COLLEGE_DEPT_DEMO_OUTLINE.OTF"); */
+
+@font-face {
+  font-family: 'VINTAGE COLLEGE DEPT_DEMO_outli';
+  src: url('../assets/fonts/VINTAGE_COLLEGE_DEPT_DEMO_OUTLINE.OTF');
+  /* url('../font/BadDogSCapsSSKBold.woff') format('woff'); */
+  font-weight: normal;
+  font-style: normal;
+  }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -13,6 +21,7 @@ body {
   background-attachment: scroll;
   background-size: 180em;
   object-fit: fill;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .layout_padding {
