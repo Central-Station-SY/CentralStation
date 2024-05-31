@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CentralStation/static/css/main.c2e90eb6.css",
+    "main.css": "/CentralStation/static/css/main.a8c0efa1.css",
     "main.js": "/CentralStation/static/js/main.1e68af22.js",
     "static/js/453.a6a97343.chunk.js": "/CentralStation/static/js/453.a6a97343.chunk.js",
     "static/media/backgrounds.jpeg": "/CentralStation/static/media/backgrounds.71d993673b263ca48783.jpeg",
@@ -23,12 +23,12 @@
     "static/media/o1.jpg": "/CentralStation/static/media/o1.62a8c9e1282c80ea35f9.jpg",
     "static/media/favicon.png": "/CentralStation/static/media/favicon.ca482020a991f1ade248.png",
     "index.html": "/CentralStation/index.html",
-    "main.c2e90eb6.css.map": "/CentralStation/static/css/main.c2e90eb6.css.map",
+    "main.a8c0efa1.css.map": "/CentralStation/static/css/main.a8c0efa1.css.map",
     "main.1e68af22.js.map": "/CentralStation/static/js/main.1e68af22.js.map",
     "453.a6a97343.chunk.js.map": "/CentralStation/static/js/453.a6a97343.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2e90eb6.css",
+    "static/css/main.a8c0efa1.css",
     "static/js/main.1e68af22.js"
   ]
 }
