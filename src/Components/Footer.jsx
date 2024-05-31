@@ -12,6 +12,8 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <motion.div id="Footer" className="footer_section">
       <motion.div className="container">
@@ -128,14 +130,13 @@ const Footer = () => {
         </motion.div>
         <motion.div className="footer-info">
           <p>
-            &copy; <span id="displayYear"></span> All Rights Reserved By
-            <a href="#">Central Station</a>
+            &copy; <span id="displayYear">{currentYear}</span> All Rights
+            Reserved By
+            <a href="#"> Central Station</a>
             <br />
             <br />
-            &copy; <span id="displayYear"></span> Distributed By
-            <a href="#" target="_blank">
-              Seek Higher Things
-            </a>
+            &copy; <span id="displayYear">{currentYear}</span> Distributed By
+            <a href="#" target="_blank"> Seek Higher Things</a>
           </p>
         </motion.div>
       </motion.div>

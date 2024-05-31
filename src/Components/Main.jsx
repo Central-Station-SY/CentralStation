@@ -45,7 +45,7 @@ const Main = () => {
                         opacity: 1,
                         y: 0, // Slide in to its original position
                         transition: {
-                          duration: 4, // Animation duration
+                          duration: 2, // Animation duration
                         },
                       }}
                       viewport={{ once: true }}

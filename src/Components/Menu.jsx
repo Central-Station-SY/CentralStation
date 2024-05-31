@@ -125,6 +125,7 @@ export default function Menu() {
                       size={"50px"}
                       onClick={() => {
                         setIsActiveCategory(null);
+                        window.history.back();
                       }}
                     />
                   </motion.div>
