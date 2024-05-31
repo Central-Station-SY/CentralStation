@@ -16,11 +16,11 @@ const About = () => {
               initial={{
                 opacity: 0,
                 // if odd index card,slide from right instead of left
-                x: 3 % 2 === 0 ? 0 : 300,
+                y: 3 % 2 === 0 ? 0 : 300,
               }}
               whileInView={{
                 opacity: 1,
-                x: 0, // Slide in to its original position
+                y: 0, // Slide in to its original position
                 transition: {
                   duration: 2, // Animation duration
                 },

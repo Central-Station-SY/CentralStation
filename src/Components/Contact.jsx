@@ -95,7 +95,7 @@ export default function Contact() {
             initial={{
               opacity: 0,
               // if odd index card,slide from right instead of left
-              x: 3 % 2 === 0 ? 0 : 300,
+              y: 3 % 2 === 0 ? 0 : 300,
             }}
             whileInView={{
               opacity: 1,
