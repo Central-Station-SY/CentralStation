@@ -106,9 +106,9 @@ export default function Menu() {
           </motion.div>
           <motion.div
             style={{
-              display: "-webkit - box",
-              display: "-webkit - box",
-              display: "-ms - flexbox",
+              // display: "-webkit - box",
+              // display: "-webkit - box",
+              // display: "-ms - flexbox",
               display: "flex",
               justifyContent: "center",
               marginTop: "45px",

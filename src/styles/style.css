@@ -711,7 +711,7 @@ a:focus {
   background: #221f1f;
   background-image: url('../assets/images/about.jpg');
   background-size: cover;
-  background-position: center; 
+  background-position: 10dvh; 
   color: #EFF1DC;
 }
 

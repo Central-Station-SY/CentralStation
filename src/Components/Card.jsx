@@ -51,7 +51,7 @@ function Card({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2, delay: id * 2 }}
-      className="col-sm-6 col-lg-4 flex-1"
+      className="col-sm-6 col-lg-4"
       style={{ fontFamily: !lang ? "'Cairo', sans-serif" : "" }} // Apply font here
     >
       <motion.div onClick={openModal} className="box">
