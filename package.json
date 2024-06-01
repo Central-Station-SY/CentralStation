@@ -1,6 +1,5 @@
 {
-  "homepage": "https://MohamadKheerMustafa.github.io/CentralStation",
-  "name": "app",
+  "name": "central-station",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
