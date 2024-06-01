@@ -7,9 +7,6 @@ const About = () => {
       <motion.div className="container  ">
         <motion.div className="row">
           <motion.div className="col-md-6 ">
-            {/* <motion.div className="img-box">
-              <img src={about} alt="" />
-            </motion.div> */}
           </motion.div>
           <motion.div className="col-md-6">
             <motion.div

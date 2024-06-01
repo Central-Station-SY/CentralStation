@@ -2,329 +2,397 @@ export const data = {
   menu: [
     {
       id: 1,
-      categoryName: "All",
-      categoryImage : 'f1.png',
-      categoryDescription : "All categories",
+      categoryName_en: "APPETIZERS",
+      categoryName_ar: "المقبلات",
+      categoryImage: "f1.png", // APPETIZERS image
+      // categoryDescription_en: "All Appetizers",
       items: [
         {
           id: 1,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
-          image: "f4.png",
+          name: "MINI CORN DOGS",
+          description_en:
+            "Four mini corn dogs, deep-fried to perfection, served with ketchup and mustard for dipping.",
+          description_ar:
+            "أربع قطع من الهوت دوغ المقلية ,تقدم مع  كتشب و خردل.",
+          price: "35,000 SP",
+          image: "f4.png", // name image
         },
         {
           id: 2,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
+          name: "CHICKEN BOUBOU",
+          description_en:
+            "150g Fried chicken, served with an optional sauce selection of BBQ, Kimchi Mayo, Sriracha.",
+          description_ar:
+            "150 غرام من الدجاج المقلي, يقدم مع صوص حسب الاختيار ( الباربكيو أو كيمشي مايو أو السيراتشا)",
+          price: "35,000 SP",
           image: "f5.png",
         },
         {
           id: 3,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
+          name: "MINI SLIDERS",
+          description_en: "3 Mini beef burgers, with smoked sauce and cheese.",
+          description_ar: "3 سلايدر لحمة مع صوص السموكيد و جبنة",
+          price: "65,000 SP",
           image: "f6.png",
         },
         {
           id: 4,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
+          name: "FRIES",
+          description_en: "Perfectly crisp fries.",
+          description_ar: "بطاطا مقرمشة, كتشب",
+          price: "25,000 SP",
           image: "f1.png",
         },
         {
           id: 5,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
+          name: "CHESSY FRIES",
+          description_en: "Crisp fries, served with melted cheddar.",
+          description_ar: "بطاطا مقرمشة تقدم مع جبنة الشيدر السائلة.",
+          price: "35,000 SP",
           image: "f2.png",
         },
         {
           id: 6,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f3.png",
-        },
-        {
-          id: 7,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f2.png",
-        },
-        {
-          id: 8,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f3.png",
-        },
-        {
-          id: 9,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f2.png",
-        },
-        {
-          id: 10,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f3.png",
-        },
-        {
-          id: 11,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
-          image: "f4.png",
-        },
-        {
-          id: 12,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
-          image: "f5.png",
-        },
-        {
-          id: 13,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
-          image: "f6.png",
-        },
-        {
-          id: 14,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f1.png",
-        },
-        {
-          id: 15,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f2.png",
-        },
-        {
-          id: 16,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f3.png",
-        },
-        {
-          id: 17,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f2.png",
-        },
-        {
-          id: 18,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f3.png",
-        },
-        {
-          id: 19,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f2.png",
-        },
-        {
-          id: 20,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
+          name: "POTATO WEDGES",
+          description_en:
+            "Larg crisp slices of potato wedges, served with ketchup for dipping.",
+          description_ar: "قطع كبيرة من بطاطا المقرمشة, كتشب",
+          price: "30,000 SP",
           image: "f3.png",
         },
       ],
     },
     {
       id: 2,
-      categoryName: "Burgers",
-      categoryImage : 'f1.png',
-      categoryDescription : "All Burgers",
+      categoryName_en: "WINGS",
+      categoryName_ar: "جوانح",
+      categoryImage: "f1.png",
+      // categoryDescription: "All Wings",
       items: [
         {
-          id: 4,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
+          id: 1,
+          name: "CHICKEN WINGS",
+          description_en:
+            "5 Bone-in wings, breaded to perfection. crispy, crunchy and delicious (BBQ, Buffalo, Honey Musterd).",
+          description_ar:
+            "5 قطع من جوانح الدجاج المقلية و المقرمشة, مع صوص حسب الاختيار ( باربكيو, بوفالو, هاني ماسترد).",
+          price: "55,000 SP",
           image: "f1.png",
         },
         {
-          id: 5,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
+          id: 2,
+          name: "CHICKEN STRIPS",
+          description_en:
+            "4 Hand breaded chicken fillet strips, the crispiest in town (BBQ, Buffalo ,Honey Musterd).",
+          description_ar:
+            "4 قطع تشكن ستربس المقلية و المقرمشة, مع  صوص حسب الاختيار ( باربكيو, بوفالو, هاني ماستر).",
+          price: "35,000 SP",
           image: "f2.png",
-        },
-        {
-          id: 6,
-          name: "Classic Cheeseburger",
-          description:
-            "Beef patty topped with cheddar cheese, lettuce, and pickles",
-          price: "$10.99",
-          image: "f3.png",
         },
       ],
     },
     {
       id: 3,
-      categoryName: "Sandwich",
-      categoryImage : 'f1.png',
-      categoryDescription : "All Sandwich",
+      categoryName_en: "CHICKEN BURGER & SANDWICHS",
+      categoryName_ar: "برجر الدجاج والسندويشات",
+      categoryImage: "f1.png",
+      // categoryDescription: "All Chicken Burger & Sandwichs",
       items: [
         {
           id: 1,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
+          name: "CHICKEN BBQ BURGER",
+          description_en:
+            "Crunchy chicken breast with BBQ Sauce, mayo, iceberg lettuce and pickles.",
+          description_ar:
+            "صدر دجاج مقرمش مع صوص الباربكيو, مايونيز, خس ايسبرغ, مخلل.",
+          price: "44,000 SP",
           image: "f4.png",
         },
         {
           id: 2,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
+          name: "CHICKEN KAMIKAZE BURGER",
+          description_en:
+            "Crunchy chicken breast with jalapeno sauce, iceberg and Lollo Rossa lettuce, pickles, tomato and special cocktail sauce.",
+          description_ar:
+            "صدر دجاج مقرمش مع صوص الهالبينو, خس ايسبرغ, خس لولو روسا, مخلل , بندورة, صوص خاص",
+          price: "55,000 SP",
           image: "f5.png",
         },
         {
           id: 3,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
+          name: "OLD FASHIONED CHICKEN BURGER",
+          description_en:
+            "Crunchy chicken breast topped with melted cheddar cheese, old fashioned sauce, kimchi mayo and pickles.",
+          description_ar:
+            "صدر دجاج مقرمش مغطى بجبنة الشيدر السائلة, صوص أولد فاشن , كيمشي مايو, مخلل",
+          price: "50,000 SP",
+          image: "f6.png",
+        },
+        {
+          id: 4,
+          name: "CHICKEN AVOCADO SANDWICH",
+          description_en:
+            "Grilled chicken breast with avocado spread sauce, cheddar cheese, Rocca, honey mustard sauce, sauteed carrots and onions, served in brown bread.",
+          description_ar:
+            "صدر دجاج مشوي مع صوص الأفودكادو, جبنة تشيدر, جرجير, صوص هاني ماسترد, جزر و بصل سوتيه",
+          price: "57,000 SP",
+          image: "f6.png",
+        },
+        {
+          id: 5,
+          name: "CENTRAL STATION SANDWICH",
+          description_en:
+            "Grilled marinated chicken, signature sauce, lettuce, pickles, onion and kashkaval cheese.",
+          description_ar:
+            "دجاج متبل مشوي, صوص خاص, خس, مخلل, بصل, جبنة القشقوان.",
+          price: "55,000 SP",
+          image: "f6.png",
+        },
+        {
+          id: 6,
+          name: "TAWOOK SANDWICH",
+          description_en:
+            "Our tawook sandwich comes with coleslaw, pickles, garlic mayo sauce, served in tortilla bread.",
+          description_ar:
+            "شيش طاووك , كول سلو, مخلل, كريم ثوم, تقدم في خبز التورتيلا.",
+          price: "38,000 SP",
+          image: "f6.png",
+        },
+        {
+          id: 7,
+          name: "CHICKEN SUB",
+          description_en:
+            "Tender marinated chicken breast grilled to perfection, topped with , kashkaval cheese, mayo and mustard.",
+          description_ar:
+            "صدر دجاج مشوي و متبل مغطى بجبنة القشقوان, مايونيز, خردل.",
+          price: "45,000 SP",
+          image: "f6.png",
+        },
+        {
+          id: 8,
+          name: "CHICKEN WRAP",
+          description_en:
+            "Chicken strips loaded with cheddar cheese, kimchi mayo, iceberg lettuce and pickles served in tortilla bread.",
+          description_ar:
+            "شرائح من الدجاج مع جبنة التشيدر,  كيمشي مايو, خس ايسبرغ, مخلل, تقدم في خبز التورتيلا.",
+          price: "40,000 SP",
+          image: "f6.png",
+        },
+        {
+          id: 9,
+          name: "CLUB SANDWICH",
+          description_en:
+            "Toasted and stacked bread with chicken breasts, smoked turkey , iceberg lettuce, tomatoes, mayo, pickles, and cheddar cheese.",
+          description_ar:
+            "صدر دجاج مشوي , حبش مدخن, خس ايسبرغ, بندورة, مايونيز, مخلل, جبنة التشيدر تقدم بخبز التوستز",
+          price: "46,000 SP",
           image: "f6.png",
         },
       ],
     },
     {
       id: 4,
-      categoryName: "Salads",
-      categoryImage : 'f1.png',
-      categoryDescription : "All Salads",
+      categoryName_en: "BEEF BURGER & SANDWICHES",
+      categoryName_ar: "برجر لحم والسندويشات",
+      categoryImage: "f1.png",
+      // categoryDescription: "All Beef Burgers & Sandwiches",
       items: [
         {
           id: 1,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
+          name: "OVERDOSE BURGER",
+          description_en:
+            "120g Beef burger with fresh sautéed mushrooms, caramelized onions, melted mozzarella cheese, pepperoni, Lollo Rossa lettuce, pickles, and dipped in our unique signature sauce.",
+          description_ar:
+            "120 غرام برغر لحم,  فطر طازج سوتيه، بصل مكرمل، جبنة موزاريلا سائلة، بيبروني، خس لولو روسا، مخلل، ومغمور في صوصنا المميز. ",
+          price: "80,000 SP",
           image: "f4.png",
         },
         {
           id: 2,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
-          image: "f5.png",
+          name: "SMOKED BURGER",
+          description_en:
+            "120g Beef burger with smoked salami, iceberg lettuce , pickles and our signature smoked sauce.",
+          description_ar:
+            "120 غرام برغر لحم مع سلامي مدخن، خس ايسبرج، مخلل و الصوص الخاص المدخن.",
+          price: "76,000 SP",
+          image: "f4.png",
         },
         {
           id: 3,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
-          image: "f6.png",
+          name: "CLASSIC BURGER",
+          description_en:
+            "120g Beef burger with onion, tomato, American mustard, iceberg lettuce, ketchup, coleslaw, kimchi mayo sauce, and pickles.",
+          description_ar:
+            "120 غرام برغر لحم مع بصل، بندورة، خردل أمريكي، خس آيسبرج، كاتشب، كول سلو، صوص كيمتشي مايونيز ومخلل.",
+          price: "55,000 SP",
+          image: "f4.png",
+        },
+        {
+          id: 4,
+          name: "CLASSIC CHESSE BURGER",
+          description_en:
+            "120g Beef burger with kashkaval cheese,  onion, tomato, American mustard, iceberg lettuce, ketchup, coleslaw, kimchi mayo sauce, and pickles.",
+          description_ar:
+            "120 غرام برغر لحم مع جبنة قشقوان، بصل، بندورة، خردل أمريكي، خس آيسبرج، كاتشب، كول سلو، صوص كيمتشي مايونيز ومخلل.",
+          price: "65,000 SP",
+          image: "f4.png",
+        },
+        {
+          id: 5,
+          name: "OLD FASHIONED BURGER",
+          description_en:
+            "120g Beef burger with liquid cheddar cheese, onion, kimchi mayo sauce, and old fashioned sauce.",
+          description_ar:
+            "120 غرام برجر لحم مع جبنة شيدر سائلة، بصل، صوص كيمشي مايونيز وصوص أولد فاشن.",
+          price: "65,000 SP",
+          image: "f4.png",
+        },
+        {
+          id: 6,
+          name: "STICK SANDWICH",
+          description_en:
+            "80g Fillet steak with honey mustard sauce, onion, kashkaval cheese, Rocca, soya sauce, fresh mushrooms and mayo.",
+          description_ar:
+            "80 غرام من  فيليه اللحم  مع صلصة هاني ماسترد، بصل، جبنة قشقوان، جرجير، صوص الصويا، فطر طازج ومايونيز.",
+          price: "82,000 SP",
+          image: "f4.png",
+        },
+        {
+          id: 7,
+          name: "CHESSY BEEF TOAST",
+          description_en:
+            "Ground beef, topped with onions, iceberg lettuce, fresh mushrooms, mayo, pickles and melted kashkaval cheese in between tow crispy griddled slices of bread.",
+          description_ar:
+            "لحم مفروم، مغطى بالبصل، خس، فطر طازج، مايونيز، مخلل وجبنة قشقوان سائلة بين شريحتين من الخبز التوست المشوي المقرمش.",
+          price: "55,000 SP",
+          image: "f4.png",
+        },
+        {
+          id: 8,
+          name: "MUSHROOMZZZ",
+          description_en:
+            "120g Beef burger in tow crispy slices of toast bread, tomato, kashkaval cheese, smoked turkey, iceberg lettuce and pickles.",
+          description_ar:
+            "120 غرام برغر من اللحم في شريحتين مقرمشتين من خبز التوست، بندورة، جبنة قشقوان، حبش مدخن، خس آيسبرج ومخلل.",
+          price: "60,000 SP",
+          image: "f4.png",
         },
       ],
     },
     {
       id: 5,
-      categoryName: "Wings",
-      categoryImage : 'f1.png',
-      categoryDescription : "All Wings",
+      categoryName_en: "HOT DOG",
+      categoryName_ar: "هوت دوج",
+      categoryImage: "f1.png",
+      // categoryDescription: "All HotDog",
       items: [
         {
           id: 1,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
+          name: "CHESSY WRAP HOT DOG",
+          description_en:
+            "Hot dog in tortilla bread topped with liquid cheddar cheese, corn, ketchup, mayo and pickles.",
+          description_ar:
+            "هوت دوغ في خبز تورتيلا مغطى بجبنة شيدر سائلة، ذرة، كاتشب، مايونيز ومخلل.",
+          price: "35,000 SP",
           image: "f4.png",
         },
         {
           id: 2,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
-          image: "f5.png",
+          name: "FRANKFURTER HOT DOG",
+          description_en:
+            "Hot dog , mustard, ketchup, pickles, chips sticks and cheddar cheese.",
+          description_ar: "هوت دوغ، خردل، كاتشب، مخلل، أصابع شيبس و جبنة شيدر.",
+          price: "35,000 SP",
+          image: "f4.png",
         },
         {
           id: 3,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
-          image: "f6.png",
+          name: "HONY MUSTARD HOT DOG",
+          description_en:
+            "Hot dog topped with honey mustard sauce, mayo, pickles and chips sticks.",
+          description_ar:
+            "هوت دوغ مغطى بصوص هاني ماسترد، مايونيز، مخلل و أصابع شيبس.",
+          price: "40,000 SP",
+          image: "f4.png",
+        },
+        {
+          id: 4,
+          name: "CHILI CHESSY DOG",
+          description_en:
+            "hotdog with avocado sauce, chips sticks, iceberg lettuce, liquid cheddar cheese, ketchup and signature chili sauce.",
+          description_ar:
+            "هوت دوغ مع صوص أفوكادو، أصابع شيبس، خس آيسبرج، جبنة شيدر سائلة، كاتشب وصوص تشيلي خاص.",
+          price: "40,000 SP",
+          image: "f4.png",
         },
       ],
     },
     {
       id: 6,
-      categoryName: "Blablabla",
-      categoryImage : 'f1.png',
-      categoryDescription : "All blablabla",
+      categoryName_en: "SALAD",
+      categoryName_ar: "السلطات",
+      categoryImage: "f1.png",
+      // categoryDescription: "All Salads",
       items: [
         {
           id: 1,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
+          name: "CHICKEN CESAR SALAD",
+          description_en:
+            "Fresh romaine lettuce, tossed with our famous Caesar dressing, parmesan cheese, croutons, cherry tomatoes,  and topped with juicy tender chicken breast.",
+          description_ar:
+            "خس طازج، ممزوج بصوص سيزر ، جبنة بارميزان، خبز محمص، بندورة كرزية، قطع من صدور الدجاج الطرية.",
+          price: "55,000 SP",
           image: "f4.png",
         },
         {
           id: 2,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
-          image: "f5.png",
+          name: "CESAR SALAD",
+          description_en:
+            "Fresh romaine lettuce, tossed with our famous Caesar dressing, parmesan cheese, croutons and cherry tomatoes.",
+          description_ar:
+            "خس طازج، مغطي بصوص سيزر الشهير، جبنة بارميزان، خبز محمص وبندورة كرزية.",
+          price: "40,000 SP",
+          image: "f4.png",
         },
         {
           id: 3,
-          name: "Chicken Club",
-          description:
-            "Grilled chicken breast, bacon, lettuce, and tomato on ciabatta bread",
-          price: "$9.99",
-          image: "f6.png",
+          name: "CHICKEN CORN SALAD",
+          description_en:
+            "Sweet corn with our signature lemon mayo sauce, hotdog, cherry tomatoes, and topped with juicy tender chicken breast.",
+          description_ar:
+            "ذرة حلوة مع صوص مايونيز بالليمون الخاص، هوت دوغ، بندورة كرزية، ومغطاة بصدر دجاج طري.",
+          price: "40,000 SP",
+          image: "f4.png",
+        },
+        {
+          id: 4,
+          name: "CORN SALAD",
+          description_en:
+            "Sweet corn with our signature lemon mayo sauce, hotdog and cherry tomatoes.",
+          description_ar:
+            "ذرة حلوة مع صوص مايونيز بالليمون الخاص، هوت دوغ و بندورة كرزية.",
+          price: "25,000 SP",
+          image: "f4.png",
+        },
+        {
+          id: 5,
+          name: "ROCCA MUSHROOM SALAD",
+          description_en:
+            "Fresh Rocca leaves with cherry tomatoes, fresh mushrooms, balsamic dressing and parmesan cheese on top.",
+          description_ar:
+            "جرجير, بندورة كرزية، الفطر الطازج، صوص البلسميك وجبنة البارميزان.",
+          price: "35,000 SP",
+          image: "f4.png",
+        },
+        {
+          id: 6,
+          name: "PASTA SALAD",
+          description_en:
+            "Pasta with cocktail sauce, black olive slices, carrots, hot dog and red and green pepper.",
+          description_ar:
+            "معكرونة مع صوص كوكتيل، شرائح زيتون أسود، جزر، هوت دوغ، فلفل أحمر وأخضر.",
+          price: "30,000 SP",
+          image: "f4.png",
         },
       ],
     },

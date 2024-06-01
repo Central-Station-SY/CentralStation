@@ -1,12 +1,11 @@
 import React from "react";
 import "../styles/Modal.css";
-// import Feature from "./Feature";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import * as FontAwesome from "react-icons/fa";
 import "../styles/Feature.css";
 
-const Modal = ({ id, name, description, price, image, close }) => {
+const Modal = ({ id, name, description, price, image, close, lang }) => {
   const modalVariants = {
     open: {
       opacity: 1,
@@ -29,6 +28,8 @@ const Modal = ({ id, name, description, price, image, close }) => {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: "10%" },
   };
+
+  const textDirection = lang ? "ltr" : "rtl";
 
   return (
     <motion.div
@@ -66,7 +67,16 @@ const Modal = ({ id, name, description, price, image, close }) => {
           className="modal__description-wrapper"
           variants={modalRowVariants}
         >
-          <p className="modal__description">{description}</p>
+          <p
+            className="modal__description"
+            style={
+              lang
+                ? { direction: textDirection }
+                : { direction: textDirection, fontFamily: "Cairo" }
+            }
+          >
+            {description}
+          </p>
         </motion.div>
       </motion.div>
     </motion.div>

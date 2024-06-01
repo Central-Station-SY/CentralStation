@@ -12,7 +12,11 @@ export default function Menu() {
   const [currentPage, setCurrentPage] = useState(1);
   const [showItem, setShowItem] = useState(false);
   const [showCategory, setShowCategory] = useState(true);
-  const itemsPerPage = 6;
+  const [langEn, setLangEn] = useState();
+  const [activeButton, setActiveButton] = useState(
+    langEn ? "English" : "Arabic"
+  );
+  const itemsPerPage = 50;
   const containerRef = useRef(null); // Ref for the main container
   const firstItemRef = useRef(null); // Ref for the first item
 
@@ -27,16 +31,24 @@ export default function Menu() {
   useEffect(() => {
     setCategory(data.menu.map((category) => category));
     setCurrentPage(1); // Reset current page to 1 when category changes
-    const selectedMenu = data.menu.find(
-      (item) => item.categoryName === isActiveCategory
-    );
-    if (selectedMenu) {
-      setCard(selectedMenu.items);
-    } else {
-      setCard(data.menu.flatMap((item) => item.items));
-    }
-
     if (isActiveCategory !== null) {
+      const selectedCategoryEn = data.menu.find(
+        (category) => category.categoryName_en === isActiveCategory
+      );
+      const selectedCategoryAr = data.menu.find(
+        (category) => category.categoryName_ar === isActiveCategory
+      );
+
+      if (langEn) {
+        if (selectedCategoryEn) {
+          setCard(selectedCategoryEn.items);
+        }
+      } else {
+        if (selectedCategoryAr) {
+          setCard(selectedCategoryAr.items);
+        }
+      }
+
       setShowCategory(false);
       setShowItem(true);
       window.history.pushState(
@@ -45,6 +57,7 @@ export default function Menu() {
         `#${isActiveCategory}`
       );
     } else {
+      setCard([]); // Reset card state when no category is selected
       setShowCategory(true);
       setShowItem(false);
       window.history.pushState({}, "", "");
@@ -91,6 +104,75 @@ export default function Menu() {
           <motion.div className="heading_container heading_center">
             <h2>Our Menu</h2>
           </motion.div>
+          <motion.div
+            style={{
+              display: "-webkit - box",
+              display: "-webkit - box",
+              display: "-ms - flexbox",
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "45px",
+            }}
+          >
+            <motion.button
+              style={{
+                padding: "1px 12px 1px 11px",
+                backgroundColor: "#EF8621",
+                color: activeButton === "Arabic" ? "#851619" : "#EFF1DC",
+                borderRadius: "54px",
+                transition: "all 0.3s ease 0s",
+                border:
+                  activeButton === "Arabic" ? "2px solid #851619" : "none",
+                width: "73px",
+                marginRight: "20px",
+                height: "56px",
+                scale: activeButton === "Arabic" ? 1.3 : 1,
+                boxShadow:
+                  activeButton === "Arabic"
+                    ? "0px 0px 25px rgba(239, 241, 220, 0.5)"
+                    : "none",
+              }}
+              // whileHover={{ scale: 1.1 }}
+              // whileTap={{ scale: 0.9 }}
+              onClick={() => {
+                if (langEn) {
+                  setLangEn(false);
+                  setActiveButton("Arabic");
+                }
+              }}
+            >
+              Arabic
+            </motion.button>
+            <motion.button
+              style={{
+                padding: "1px 12px 1px 11px",
+                backgroundColor: "#EF8621",
+                color: activeButton === "English" ? "#851619" : "#EFF1DC",
+                borderRadius: "54px",
+                transition: "all 0.3s ease 0s",
+                border:
+                  activeButton === "English" ? "2px solid #851619" : "none",
+                width: "73px",
+                marginRight: "20px",
+                height: "56px",
+                scale: activeButton === "English" ? 1.3 : 1,
+                boxShadow:
+                  activeButton === "English"
+                    ? "0px 0px 25px rgba(239, 241, 220, 0.5)"
+                    : "none",
+              }}
+              // whileHover={{ scale: 1.1 }}
+              // whileTap={{ scale: 0.9 }}
+              onClick={() => {
+                if (!langEn) {
+                  setLangEn(true);
+                  setActiveButton("English");
+                }
+              }}
+            >
+              English
+            </motion.button>
+          </motion.div>
           <motion.div className="filters_menu">
             <motion.div>
               <motion.div className="filters_menu">
@@ -101,9 +183,11 @@ export default function Menu() {
                           key={index}
                           setIsActiveCategory={setIsActiveCategory}
                           id={item.id}
-                          categoryName={item.categoryName}
-                          categoryDescription={item.categoryDescription}
+                          categoryName_en={item.categoryName_en}
+                          categoryName_ar={item.categoryName_ar}
+                          // categoryDescription_en={item.categoryDescription_en}
                           categoryImage={item.categoryImage}
+                          lang={langEn}
                         />
                       ))
                     : null}
@@ -132,9 +216,11 @@ export default function Menu() {
                   <motion.div className="row grid">
                     {currentItems.map((item, index) => (
                       <Card
+                        lang={langEn}
                         key={item.id}
                         name={item.name}
-                        description={item.description}
+                        description_en={item.description_en}
+                        description_ar={item.description_ar}
                         price={item.price}
                         image={item.image}
                         ref={index === 0 ? firstItemRef : null} // Set ref on the first item

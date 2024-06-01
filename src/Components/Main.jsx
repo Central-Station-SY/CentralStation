@@ -1,18 +1,7 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/images/logo.jpg";
 import { motion } from "framer-motion";
 
 const Main = () => {
-  const [animateDown, setAnimateDown] = useState(false);
-
-  const modalVariants = {
-    open: {
-      opacity: 1,
-      transition: { staggerChildren: 1, delayChildren: 2 },
-    },
-    closed: { opacity: 0 },
-  };
-
   const modalInfoVariants = {
     open: { opacity: 1, transition: { staggerChildren: 0.3 } },
     closed: { opacity: 0 },
