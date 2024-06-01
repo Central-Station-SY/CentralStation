@@ -42,11 +42,7 @@ const Main = () => {
                     >
                       <motion.h1>CENTRAL STATION</motion.h1>
                       <motion.p>
-                        Doloremque, itaque aperiam facilis rerum, commodi,
-                        temporibus sapiente ad mollitia laborum quam quisquam
-                        esse error unde. Tempora ex doloremque, labore, sunt
-                        repellat dolore, iste magni quos nihil ducimus libero
-                        ipsam.
+                        Food Always Right
                       </motion.p>
                     </motion.div>
                   </motion.div>

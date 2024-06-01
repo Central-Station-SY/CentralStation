@@ -4,7 +4,7 @@ export const data = {
       id: 1,
       categoryName_en: "APPETIZERS",
       categoryName_ar: "المقبلات",
-      categoryImage: "f1.png", // APPETIZERS image
+      categoryImage: "POTATO WEDGES-min.png", // APPETIZERS image
       // categoryDescription_en: "All Appetizers",
       items: [
         {
@@ -15,7 +15,7 @@ export const data = {
           description_ar:
             "أربع قطع من الهوت دوغ المقلية ,تقدم مع  كتشب و خردل.",
           price: "35,000 SP",
-          image: "f4.png", // name image
+          image: "MINI CORN DOGS-min.jpg", // name image
         },
         {
           id: 2,
@@ -25,7 +25,7 @@ export const data = {
           description_ar:
             "150 غرام من الدجاج المقلي, يقدم مع صوص حسب الاختيار ( الباربكيو أو كيمشي مايو أو السيراتشا)",
           price: "35,000 SP",
-          image: "f5.png",
+          image: "CHICKEN BOUBOU-min.jpg",
         },
         {
           id: 3,
@@ -33,7 +33,7 @@ export const data = {
           description_en: "3 Mini beef burgers, with smoked sauce and cheese.",
           description_ar: "3 سلايدر لحمة مع صوص السموكيد و جبنة",
           price: "65,000 SP",
-          image: "f6.png",
+          image: "MINI SLIDERS-min.png",
         },
         {
           id: 4,
@@ -41,7 +41,7 @@ export const data = {
           description_en: "Perfectly crisp fries.",
           description_ar: "بطاطا مقرمشة, كتشب",
           price: "25,000 SP",
-          image: "f1.png",
+          image: "FRIES-min.png",
         },
         {
           id: 5,
@@ -49,7 +49,7 @@ export const data = {
           description_en: "Crisp fries, served with melted cheddar.",
           description_ar: "بطاطا مقرمشة تقدم مع جبنة الشيدر السائلة.",
           price: "35,000 SP",
-          image: "f2.png",
+          image: "CHESSY FRIES-min.png",
         },
         {
           id: 6,
@@ -58,7 +58,7 @@ export const data = {
             "Larg crisp slices of potato wedges, served with ketchup for dipping.",
           description_ar: "قطع كبيرة من بطاطا المقرمشة, كتشب",
           price: "30,000 SP",
-          image: "f3.png",
+          image: "POTATO WEDGES-min.png",
         },
       ],
     },
@@ -66,7 +66,7 @@ export const data = {
       id: 2,
       categoryName_en: "WINGS",
       categoryName_ar: "جوانح",
-      categoryImage: "f1.png",
+      categoryImage: "CHICKEN WINGS-min.png",
       // categoryDescription: "All Wings",
       items: [
         {
@@ -77,7 +77,7 @@ export const data = {
           description_ar:
             "5 قطع من جوانح الدجاج المقلية و المقرمشة, مع صوص حسب الاختيار ( باربكيو, بوفالو, هاني ماسترد).",
           price: "55,000 SP",
-          image: "f1.png",
+          image: "CHICKEN WINGS-min.png",
         },
         {
           id: 2,
@@ -87,7 +87,7 @@ export const data = {
           description_ar:
             "4 قطع تشكن ستربس المقلية و المقرمشة, مع  صوص حسب الاختيار ( باربكيو, بوفالو, هاني ماستر).",
           price: "35,000 SP",
-          image: "f2.png",
+          image: "CHICKEN STRIPS-min.png",
         },
       ],
     },
@@ -95,7 +95,7 @@ export const data = {
       id: 3,
       categoryName_en: "CHICKEN BURGER & SANDWICHS",
       categoryName_ar: "برجر الدجاج والسندويشات",
-      categoryImage: "f1.png",
+      categoryImage: "CHICKEN KAMIKAZE BURGER-min.png",
       // categoryDescription: "All Chicken Burger & Sandwichs",
       items: [
         {
@@ -106,7 +106,7 @@ export const data = {
           description_ar:
             "صدر دجاج مقرمش مع صوص الباربكيو, مايونيز, خس ايسبرغ, مخلل.",
           price: "44,000 SP",
-          image: "f4.png",
+          image: "CHICKEN BBQ BURGER-min.png",
         },
         {
           id: 2,
@@ -116,7 +116,7 @@ export const data = {
           description_ar:
             "صدر دجاج مقرمش مع صوص الهالبينو, خس ايسبرغ, خس لولو روسا, مخلل , بندورة, صوص خاص",
           price: "55,000 SP",
-          image: "f5.png",
+          image: "CHICKEN KAMIKAZE BURGER-min.png",
         },
         {
           id: 3,
@@ -126,7 +126,7 @@ export const data = {
           description_ar:
             "صدر دجاج مقرمش مغطى بجبنة الشيدر السائلة, صوص أولد فاشن , كيمشي مايو, مخلل",
           price: "50,000 SP",
-          image: "f6.png",
+          image: "OLD FASHIONED CHICKEN  BURGER-min.png",
         },
         {
           id: 4,
@@ -136,7 +136,7 @@ export const data = {
           description_ar:
             "صدر دجاج مشوي مع صوص الأفودكادو, جبنة تشيدر, جرجير, صوص هاني ماسترد, جزر و بصل سوتيه",
           price: "57,000 SP",
-          image: "f6.png",
+          image: "CHICKEN AVOCADO SANDWICH-min.png",
         },
         {
           id: 5,
@@ -146,7 +146,7 @@ export const data = {
           description_ar:
             "دجاج متبل مشوي, صوص خاص, خس, مخلل, بصل, جبنة القشقوان.",
           price: "55,000 SP",
-          image: "f6.png",
+          image: "CENTRAL STATION SANDWICH-min.png",
         },
         {
           id: 6,
@@ -156,7 +156,7 @@ export const data = {
           description_ar:
             "شيش طاووك , كول سلو, مخلل, كريم ثوم, تقدم في خبز التورتيلا.",
           price: "38,000 SP",
-          image: "f6.png",
+          image: "TAWOOK SANDWICH-min.png",
         },
         {
           id: 7,
@@ -166,7 +166,7 @@ export const data = {
           description_ar:
             "صدر دجاج مشوي و متبل مغطى بجبنة القشقوان, مايونيز, خردل.",
           price: "45,000 SP",
-          image: "f6.png",
+          image: "CHICKEN SUB-min.png",
         },
         {
           id: 8,
@@ -176,7 +176,7 @@ export const data = {
           description_ar:
             "شرائح من الدجاج مع جبنة التشيدر,  كيمشي مايو, خس ايسبرغ, مخلل, تقدم في خبز التورتيلا.",
           price: "40,000 SP",
-          image: "f6.png",
+          image: "CHICKEN WRAP-min.png",
         },
         {
           id: 9,
@@ -186,7 +186,7 @@ export const data = {
           description_ar:
             "صدر دجاج مشوي , حبش مدخن, خس ايسبرغ, بندورة, مايونيز, مخلل, جبنة التشيدر تقدم بخبز التوستز",
           price: "46,000 SP",
-          image: "f6.png",
+          image: "CHICKEN WRAP-min.png", // not ready
         },
       ],
     },
@@ -194,7 +194,7 @@ export const data = {
       id: 4,
       categoryName_en: "BEEF BURGER & SANDWICHES",
       categoryName_ar: "برجر لحم والسندويشات",
-      categoryImage: "f1.png",
+      categoryImage: "OVERDOSE BURGER-min.png",
       // categoryDescription: "All Beef Burgers & Sandwiches",
       items: [
         {
@@ -205,7 +205,7 @@ export const data = {
           description_ar:
             "120 غرام برغر لحم,  فطر طازج سوتيه، بصل مكرمل، جبنة موزاريلا سائلة، بيبروني، خس لولو روسا، مخلل، ومغمور في صوصنا المميز. ",
           price: "80,000 SP",
-          image: "f4.png",
+          image: "OVERDOSE BURGER-min.png",
         },
         {
           id: 2,
@@ -215,7 +215,7 @@ export const data = {
           description_ar:
             "120 غرام برغر لحم مع سلامي مدخن، خس ايسبرج، مخلل و الصوص الخاص المدخن.",
           price: "76,000 SP",
-          image: "f4.png",
+          image: "SMOKED BURGER-min.png",
         },
         {
           id: 3,
@@ -225,7 +225,7 @@ export const data = {
           description_ar:
             "120 غرام برغر لحم مع بصل، بندورة، خردل أمريكي، خس آيسبرج، كاتشب، كول سلو، صوص كيمتشي مايونيز ومخلل.",
           price: "55,000 SP",
-          image: "f4.png",
+          image: "CLASSIC BURGER-min.png",
         },
         {
           id: 4,
@@ -235,7 +235,7 @@ export const data = {
           description_ar:
             "120 غرام برغر لحم مع جبنة قشقوان، بصل، بندورة، خردل أمريكي، خس آيسبرج، كاتشب، كول سلو، صوص كيمتشي مايونيز ومخلل.",
           price: "65,000 SP",
-          image: "f4.png",
+          image: "CLASSIC CHESSE BURGER-min.png",
         },
         {
           id: 5,
@@ -245,7 +245,7 @@ export const data = {
           description_ar:
             "120 غرام برجر لحم مع جبنة شيدر سائلة، بصل، صوص كيمشي مايونيز وصوص أولد فاشن.",
           price: "65,000 SP",
-          image: "f4.png",
+          image: "OLD FASHIONED BURGER-min.png",
         },
         {
           id: 6,
@@ -255,7 +255,7 @@ export const data = {
           description_ar:
             "80 غرام من  فيليه اللحم  مع صلصة هاني ماسترد، بصل، جبنة قشقوان، جرجير، صوص الصويا، فطر طازج ومايونيز.",
           price: "82,000 SP",
-          image: "f4.png",
+          image: "STICK SANDWICH-min.png",
         },
         {
           id: 7,
@@ -265,7 +265,7 @@ export const data = {
           description_ar:
             "لحم مفروم، مغطى بالبصل، خس، فطر طازج، مايونيز، مخلل وجبنة قشقوان سائلة بين شريحتين من الخبز التوست المشوي المقرمش.",
           price: "55,000 SP",
-          image: "f4.png",
+          image: "CHESSY BEEF TOAST-min.png",
         },
         {
           id: 8,
@@ -275,7 +275,7 @@ export const data = {
           description_ar:
             "120 غرام برغر من اللحم في شريحتين مقرمشتين من خبز التوست، بندورة، جبنة قشقوان، حبش مدخن، خس آيسبرج ومخلل.",
           price: "60,000 SP",
-          image: "f4.png",
+          image: "CHESSY BEEF TOAST-min.png", // not ready
         },
       ],
     },
@@ -283,7 +283,7 @@ export const data = {
       id: 5,
       categoryName_en: "HOT DOG",
       categoryName_ar: "هوت دوج",
-      categoryImage: "f1.png",
+      categoryImage: "FRANKFURTER HOT DOG-min.png",
       // categoryDescription: "All HotDog",
       items: [
         {
@@ -294,7 +294,7 @@ export const data = {
           description_ar:
             "هوت دوغ في خبز تورتيلا مغطى بجبنة شيدر سائلة، ذرة، كاتشب، مايونيز ومخلل.",
           price: "35,000 SP",
-          image: "f4.png",
+          image: "CHESSY WRAP HOT DOG-min.png",
         },
         {
           id: 2,
@@ -303,7 +303,7 @@ export const data = {
             "Hot dog , mustard, ketchup, pickles, chips sticks and cheddar cheese.",
           description_ar: "هوت دوغ، خردل، كاتشب، مخلل، أصابع شيبس و جبنة شيدر.",
           price: "35,000 SP",
-          image: "f4.png",
+          image: "FRANKFURTER HOT DOG-min.png",
         },
         {
           id: 3,
@@ -313,7 +313,7 @@ export const data = {
           description_ar:
             "هوت دوغ مغطى بصوص هاني ماسترد، مايونيز، مخلل و أصابع شيبس.",
           price: "40,000 SP",
-          image: "f4.png",
+          image: "HONY MUSTARD HOT DOG-min.png",
         },
         {
           id: 4,
@@ -323,7 +323,7 @@ export const data = {
           description_ar:
             "هوت دوغ مع صوص أفوكادو، أصابع شيبس، خس آيسبرج، جبنة شيدر سائلة، كاتشب وصوص تشيلي خاص.",
           price: "40,000 SP",
-          image: "f4.png",
+          image: "CHILI CHESSY DOG-min.png",
         },
       ],
     },
@@ -331,7 +331,7 @@ export const data = {
       id: 6,
       categoryName_en: "SALAD",
       categoryName_ar: "السلطات",
-      categoryImage: "f1.png",
+      categoryImage: "CESAR SALAD-min.png",
       // categoryDescription: "All Salads",
       items: [
         {
@@ -342,7 +342,7 @@ export const data = {
           description_ar:
             "خس طازج، ممزوج بصوص سيزر ، جبنة بارميزان، خبز محمص، بندورة كرزية، قطع من صدور الدجاج الطرية.",
           price: "55,000 SP",
-          image: "f4.png",
+          image: "CHICKEN CESAR SALAD-min.png",
         },
         {
           id: 2,
@@ -352,7 +352,7 @@ export const data = {
           description_ar:
             "خس طازج، مغطي بصوص سيزر الشهير، جبنة بارميزان، خبز محمص وبندورة كرزية.",
           price: "40,000 SP",
-          image: "f4.png",
+          image: "CESAR SALAD-min.png",
         },
         {
           id: 3,
@@ -362,7 +362,7 @@ export const data = {
           description_ar:
             "ذرة حلوة مع صوص مايونيز بالليمون الخاص، هوت دوغ، بندورة كرزية، ومغطاة بصدر دجاج طري.",
           price: "40,000 SP",
-          image: "f4.png",
+          image: "CHICKEN CORN SALAD-min.png",
         },
         {
           id: 4,
@@ -372,7 +372,7 @@ export const data = {
           description_ar:
             "ذرة حلوة مع صوص مايونيز بالليمون الخاص، هوت دوغ و بندورة كرزية.",
           price: "25,000 SP",
-          image: "f4.png",
+          image: "CORN SALAD-min.png",
         },
         {
           id: 5,
@@ -382,7 +382,7 @@ export const data = {
           description_ar:
             "جرجير, بندورة كرزية، الفطر الطازج، صوص البلسميك وجبنة البارميزان.",
           price: "35,000 SP",
-          image: "f4.png",
+          image: "ROCCA MUSHROOM SALAD-min.png",
         },
         {
           id: 6,
@@ -392,7 +392,7 @@ export const data = {
           description_ar:
             "معكرونة مع صوص كوكتيل، شرائح زيتون أسود، جزر، هوت دوغ، فلفل أحمر وأخضر.",
           price: "30,000 SP",
-          image: "f4.png",
+          image: "ROCCA MUSHROOM SALAD-min.png", // not ready
         },
       ],
     },

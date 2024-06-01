@@ -39,7 +39,7 @@ const Footer = () => {
               <motion.div className="contact_link_box">
                 <a
                   target="_blank"
-                  href="https://www.google.com/maps/place/Central+Station/@33.5161248,36.3158322,20.99z/data=!4m7!3m6!1s0x1518e700a55a71c5:0x47803d398b035bf7!4b1!8m2!3d33.5160915!4d36.3158215!16s%2Fg%2F11y22cg77t?entry=ttu"
+                  href="https://www.google.com/maps/@33.5153642,36.3173504,21z?entry=ttu"
                 >
                   <CiLocationOn
                     className="fa fa-map-marker"
@@ -49,14 +49,14 @@ const Footer = () => {
                 </a>
                 <a>
                   <CiPhone className="fa fa-phone" aria-hidden="true" />
-                  <span> Call +963 1234567890</span>
+                  <span> Call +963 986411119</span>
                 </a>
                 <a>
                   <FaRegEnvelope
                     className="fa fa-envelope"
                     aria-hidden="true"
                   />
-                  <span> demo@gmail.com</span>
+                  <span> centralstation.sy@gmail.com</span>
                 </a>
               </motion.div>
             </motion.div>
@@ -95,7 +95,7 @@ const Footer = () => {
                 <a href="#">
                   <FaLinkedin className="fa fa-linkedin" aria-hidden="true" />
                 </a>
-                <a href="#">
+                <a target="_blank" href="https://www.instagram.com/centralstation.sy?igsh=bDVqdXZuOGo1eHZp&utm_source=qr">
                   <FaInstagram className="fa fa-instagram" aria-hidden="true" />
                 </a>
                 <a href="#">
@@ -125,7 +125,7 @@ const Footer = () => {
           >
             <h4>OPENING HOURS</h4>
             <p>Everyday</p>
-            <p>10.00 Am -10.00 Pm</p>
+            <p>12.00 PM -3.00 AM</p>
           </motion.div>
         </motion.div>
         <motion.div className="footer-info">
@@ -136,7 +136,10 @@ const Footer = () => {
             <br />
             <br />
             &copy; <span id="displayYear">{currentYear}</span> Distributed By
-            <a href="#" target="_blank"> Seek Higher Things</a>
+            <a href="#" target="_blank">
+              {" "}
+              Seek Higher Things
+            </a>
           </p>
         </motion.div>
       </motion.div>

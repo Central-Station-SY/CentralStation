@@ -26,7 +26,11 @@ const About = () => {
               className="detail-box"
             >
               <motion.div className="heading_container">
-                <h2>DON'T MISS THE TRAIN</h2> 
+                <img src={require('../assets/images/train.png')} style={{
+                  width: '20%',
+                  height:'20%'
+                }} />
+                {/* <h2>DON'T MISS THE TRAIN</h2>  */}
                 {/* <h2 style={{ color: }}>/h2> */}
               </motion.div>
               {/* <a href="">Read More</a> */}

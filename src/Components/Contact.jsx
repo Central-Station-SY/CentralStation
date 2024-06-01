@@ -112,7 +112,7 @@ export default function Contact() {
               <motion.div id="googleMap">
                 <MapContainer
                   className="leaflet-control-attribution"
-                  center={[33.515989, 36.3156141]}
+                  center={[33.515364, 36.317377]}
                   zoom={20}
                   scrollWheelZoom={false}
                   style={{ height: 340 }}
@@ -123,7 +123,7 @@ export default function Contact() {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   />
                   <Marker
-                    position={[33.515989, 36.3156141]}
+                    position={[33.515364, 36.317377]}
                     icon={customMarker}
                   >
                     <Popup>We're waiting for you 😊</Popup>

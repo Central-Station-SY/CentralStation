@@ -33,7 +33,7 @@ function CategoryCard({
       <motion.div variants={glowVariants} className="box">
         <motion.div>
           <motion.div className="img-box">
-            <img src={require("../assets/images/" + categoryImage)} alt="" />
+            <img src={require("../assets/images/items/" + categoryImage)} alt="" />
           </motion.div>
           <motion.div className="detail-box">
             <h5

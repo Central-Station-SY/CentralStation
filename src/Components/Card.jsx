@@ -57,7 +57,7 @@ function Card({
       <motion.div onClick={openModal} className="box">
         <motion.div>
           <motion.div className="img-box">
-            <img src={require("../assets/images/" + image)} alt={name} />
+            <img src={require("../assets/images/items/" + image)} alt={name} />
           </motion.div>
           <motion.div className="detail-box">
             <h4>{name}</h4>

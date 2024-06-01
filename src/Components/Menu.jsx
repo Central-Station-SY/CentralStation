@@ -12,7 +12,7 @@ export default function Menu() {
   const [currentPage, setCurrentPage] = useState(1);
   const [showItem, setShowItem] = useState(false);
   const [showCategory, setShowCategory] = useState(true);
-  const [langEn, setLangEn] = useState();
+  const [langEn, setLangEn] = useState(true);
   const [activeButton, setActiveButton] = useState(
     langEn ? "English" : "Arabic"
   );
