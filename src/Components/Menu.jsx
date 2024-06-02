@@ -7,28 +7,23 @@ import { FaArrowCircleLeft } from "react-icons/fa";
 
 export default function Menu() {
   const [isActiveCategory, setIsActiveCategory] = useState(null);
-  const [card, setCard] = useState([]);
-  const [category, setCategory] = useState([]);
+  const [cards, setCards] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [showItem, setShowItem] = useState(false);
-  const [showCategory, setShowCategory] = useState(true);
+  const [showItems, setShowItems] = useState(false);
   const [langEn, setLangEn] = useState(true);
   const [activeButton, setActiveButton] = useState("English");
   const itemsPerPage = 50;
-  const containerRef = useRef(null); // Ref for the main container
-  const firstItemRef = useRef(null); // Ref for the first item
+  const containerRef = useRef(null);
+  const firstItemRef = useRef(null);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = card.slice(indexOfFirstItem, indexOfLastItem);
-
-  const paginate = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
+  const currentItems = cards.slice(indexOfFirstItem, indexOfLastItem);
 
   useEffect(() => {
-    setCategory(data.menu.map((category) => category));
-    setCurrentPage(1); // Reset current page to 1 when category changes
+    setCategories(data.menu);
+    setCurrentPage(1);
   }, []);
 
   useEffect(() => {
@@ -40,20 +35,18 @@ export default function Menu() {
       );
 
       if (selectedCategory) {
-        setCard(selectedCategory.items);
+        setCards(selectedCategory.items);
       }
 
-      setShowCategory(false);
-      setShowItem(true);
+      setShowItems(true);
       window.history.pushState(
         { category: isActiveCategory },
         "",
         `#${isActiveCategory}`
       );
     } else {
-      setCard([]); // Reset card state when no category is selected
-      setShowCategory(true);
-      setShowItem(false);
+      setCards([]);
+      setShowItems(false);
       window.history.pushState({}, "", "");
     }
   }, [isActiveCategory, langEn]);
@@ -68,29 +61,25 @@ export default function Menu() {
     };
 
     window.addEventListener("popstate", handlePopState);
-
-    return () => {
-      window.removeEventListener("popstate", handlePopState);
-    };
+    return () => window.removeEventListener("popstate", handlePopState);
   }, []);
 
   useEffect(() => {
     if (containerRef.current) {
-      containerRef.current.scrollIntoView({ behavior: "smooth" }); // Scroll to top of the container
+      containerRef.current.scrollIntoView({ behavior: "smooth" });
     }
     if (firstItemRef.current) {
-      firstItemRef.current.scrollIntoView({ behavior: "smooth" }); // Scroll to the first item
+      firstItemRef.current.scrollIntoView({ behavior: "smooth" });
     }
-  }, [isActiveCategory, currentPage]); // Run effect when isActiveCategory or currentPage changes
+  }, [isActiveCategory, currentPage]);
 
   const handleLanguageChange = (lang) => {
     setLangEn(lang === "English");
     setActiveButton(lang);
-    setIsActiveCategory(null); // Reset the active category when language changes
-    setCard([]); // Reset card state when language changes
-    setShowCategory(true);
-    setShowItem(false);
-    window.history.pushState({}, "", ""); // Reset URL
+    setIsActiveCategory(null);
+    setCards([]);
+    setShowItems(false);
+    window.history.pushState({}, "", "");
   };
 
   return (
@@ -98,10 +87,9 @@ export default function Menu() {
       id="Menu"
       className="main_div"
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 3 }}
-      viewport={{ once: true }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      ref={containerRef} // Set ref on the container
+      ref={containerRef}
     >
       <motion.div className="food_section layout_padding-bottom">
         <motion.div className="container">
@@ -117,17 +105,18 @@ export default function Menu() {
           >
             <motion.button
               style={{
-                padding: "1px 12px 1px 11px",
+                padding: "1px 12px",
                 backgroundColor: "#EF8621",
                 color: activeButton === "Arabic" ? "#851619" : "#EFF1DC",
                 borderRadius: "54px",
-                transition: "all 0.3s ease 0s",
+                transition: "all 0.3s ease",
                 border:
                   activeButton === "Arabic" ? "2px solid #851619" : "none",
                 width: "73px",
                 marginRight: "20px",
                 height: "56px",
-                scale: activeButton === "Arabic" ? 1.3 : 1,
+                transform:
+                  activeButton === "Arabic" ? "scale(1.3)" : "scale(1)",
                 boxShadow:
                   activeButton === "Arabic"
                     ? "0px 0px 25px rgba(239, 241, 220, 0.5)"
@@ -139,17 +128,18 @@ export default function Menu() {
             </motion.button>
             <motion.button
               style={{
-                padding: "1px 12px 1px 11px",
+                padding: "1px 12px",
                 backgroundColor: "#EF8621",
                 color: activeButton === "English" ? "#851619" : "#EFF1DC",
                 borderRadius: "54px",
-                transition: "all 0.3s ease 0s",
+                transition: "all 0.3s ease",
                 border:
                   activeButton === "English" ? "2px solid #851619" : "none",
                 width: "73px",
                 marginRight: "20px",
                 height: "56px",
-                scale: activeButton === "English" ? 1.3 : 1,
+                transform:
+                  activeButton === "English" ? "scale(1.3)" : "scale(1)",
                 boxShadow:
                   activeButton === "English"
                     ? "0px 0px 25px rgba(239, 241, 220, 0.5)"
@@ -161,71 +151,39 @@ export default function Menu() {
             </motion.button>
           </motion.div>
           <motion.div className="filters_menu">
-            <motion.div>
-              <motion.div className="filters_menu">
-                <motion.div className="row grid glow">
-                  {showCategory === true
-                    ? category.map((item, index) => (
-                        <CategoryCard
-                          key={index}
-                          setIsActiveCategory={setIsActiveCategory}
-                          id={item.id}
-                          categoryName_en={item.categoryName_en}
-                          categoryName_ar={item.categoryName_ar}
-                          // categoryDescription_en={item.categoryDescription_en}
-                          categoryImage={item.categoryImage}
-                          lang={langEn}
-                        />
-                      ))
-                    : null}
-                </motion.div>
-              </motion.div>
-            </motion.div>
-
-            {/* menu item */}
-            {showItem === true ? (
+            {showItems ? (
               <motion.div>
                 <motion.div className="filters_menu">
                   <motion.div
-                    whileTap={() =>
-                      (document.querySelector(".main_div").style.opacity = 0)
-                    }
+                    onClick={() => setIsActiveCategory(null)}
                     style={{ paddingRight: "110%" }}
                   >
-                    <FaArrowCircleLeft
-                      size={"50px"}
-                      onClick={() => {
-                        setIsActiveCategory(null);
-                        window.history.back();
-                      }}
-                    />
+                    <FaArrowCircleLeft size={"50px"} />
                   </motion.div>
                   <motion.div className="row grid">
                     {currentItems.map((item, index) => (
                       <Card
                         lang={langEn}
                         key={item.id}
-                        name={item.name}
-                        description_en={item.description_en}
-                        description_ar={item.description_ar}
-                        price={item.price}
-                        image={item.image}
-                        ref={index === 0 ? firstItemRef : null} // Set ref on the first item
+                        {...item}
+                        ref={index === 0 ? firstItemRef : null}
                       />
                     ))}
                   </motion.div>
                 </motion.div>
-                {/* <div className="btn-box">
-                  {Array(Math.ceil(card.length / itemsPerPage))
-                    .fill()
-                    .map((_, index) => (
-                      <button key={index} onClick={() => paginate(index + 1)}>
-                        {index + 1}
-                      </button>
-                    ))}
-                </div> */}
               </motion.div>
-            ) : null}
+            ) : (
+              <motion.div className="row grid glow">
+                {categories.map((item, index) => (
+                  <CategoryCard
+                    key={index}
+                    setIsActiveCategory={setIsActiveCategory}
+                    {...item}
+                    lang={langEn}
+                  />
+                ))}
+              </motion.div>
+            )}
           </motion.div>
         </motion.div>
       </motion.div>

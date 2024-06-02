@@ -30,29 +30,24 @@ function Card({
   const textDirection = lang ? "ltr" : "rtl";
 
   useEffect(() => {
-    // Load Cairo font stylesheet when lang is false (Arabic)
     if (!lang) {
       const link = document.createElement("link");
       link.href =
         "https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap";
       link.rel = "stylesheet";
       document.head.appendChild(link);
-
-      return () => {
-        // Remove the dynamically added stylesheet when the component unmounts
-        document.head.removeChild(link);
-      };
+      return () => document.head.removeChild(link);
     }
   }, [lang]);
 
   return (
     <motion.div
       key={id}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2, delay: id * 2 }}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
+      // transition={{ duration: 1, delay: id + 1 }}
       className="col-sm-6 col-lg-4"
-      style={{ fontFamily: !lang ? "'Cairo', sans-serif" : "" }} // Apply font here
+      style={{ fontFamily: lang ? "inherit" : "'Cairo', sans-serif" }}
     >
       <motion.div onClick={openModal} className="box">
         <motion.div>
@@ -62,11 +57,10 @@ function Card({
           <motion.div className="detail-box">
             <h4>{name}</h4>
             <p
-              style={
-                lang
-                  ? { direction: textDirection }
-                  : { direction: textDirection, fontFamily: "Cairo" }
-              }
+              style={{
+                direction: textDirection,
+                fontFamily: lang ? "inherit" : "Cairo",
+              }}
             >
               {truncatedDescription}
             </p>
@@ -110,7 +104,6 @@ const Overlay = ({ children, close }) => {
       initial="closed"
       animate="open"
       exit="closed"
-      key="overlay"
     >
       {children}
     </motion.div>

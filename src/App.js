@@ -14,6 +14,24 @@ function App() {
     window.scrollTo(0, 0); // Set initial scroll position to the top when the component mounts
   }, []);
 
+  useEffect(() => {
+    // Function to prevent gesture zooming
+    const preventGestureZoom = (e) => {
+      e.preventDefault();
+    };
+
+    document.addEventListener("gesturestart", preventGestureZoom);
+    document.addEventListener("gesturechange", preventGestureZoom);
+    document.addEventListener("gestureend", preventGestureZoom);
+
+    // Clean up the event listeners when the component unmounts
+    return () => {
+      document.removeEventListener("gesturestart", preventGestureZoom);
+      document.removeEventListener("gesturechange", preventGestureZoom);
+      document.removeEventListener("gestureend", preventGestureZoom);
+    };
+  }, []);
+
   return (
     <div className="App">
       <Header />

@@ -10,16 +10,11 @@ function CategoryCard({
   lang,
 }) {
   const glowVariants = {
-    initial: {
-      scale: 0.95,
-    },
-    hover: {
-      scale: 1.1,
-    },
+    initial: { scale: 0.95 },
+    hover: { scale: 1.1 },
   };
 
   const textDirection = lang ? "ltr" : "rtl";
-
   const categoryName = lang ? categoryName_en : categoryName_ar;
 
   return (
@@ -33,51 +28,44 @@ function CategoryCard({
           <motion.div className="img-box">
             <img
               src={require("../assets/images/items/" + categoryImage)}
-              alt=""
+              alt={categoryName}
             />
           </motion.div>
           <motion.div className="detail-box">
             <h5
-              style={
-                lang
-                  ? { direction: textDirection }
-                  : { direction: textDirection, fontFamily: "Cairo" }
-              }
+              style={{
+                direction: textDirection,
+                fontFamily: lang ? "inherit" : "Cairo",
+              }}
             >
               {categoryName}
             </h5>
             <button
-              class="btn"
-              style={{
-                position: "absolute",
-                bottom: "10px",
-                left: "10px", // Adjust as needed
-              }}
+              className="btn"
+              style={{ position: "absolute", bottom: "10px", left: "10px" }}
             >
               <svg
                 width="180px"
                 height="60px"
                 viewBox="0 0 180 60"
-                class="border"
+                className="border"
               >
                 <polyline
                   points="179,1 179,59 1,59 1,1 179,1"
-                  class="bg-line"
+                  className="bg-line"
                 />
                 <polyline
                   points="179,1 179,59 1,59 1,1 179,1"
-                  class="hl-line"
+                  className="hl-line"
                 />
               </svg>
               <span
-                style={
-                  lang
-                    ? { direction: textDirection }
-                    : { direction: textDirection, fontFamily: "Cairo" }
-                }
+                style={{
+                  direction: textDirection,
+                  fontFamily: lang ? "inherit" : "Cairo",
+                }}
               >
-                {" "}
-                {lang ? "see details" : "التفاصيل"}{" "}
+                {lang ? "see details" : "التفاصيل"}
               </span>
             </button>
           </motion.div>
