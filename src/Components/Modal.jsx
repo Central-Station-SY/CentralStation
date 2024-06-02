@@ -42,6 +42,7 @@ const Modal = ({ id, name, description, price, image, close, lang }) => {
         className="modal__image"
         alt="real estate mansion"
         src={require("../assets/images/items/" + image)}
+        style={{ marginBottom: "20px" }}
         variants={imageVariants}
       ></motion.img>
       <motion.button

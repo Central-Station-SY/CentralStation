@@ -82,10 +82,6 @@ const Footer = () => {
               <a href="#" className="footer-logo">
                 <img src={logo} alt="logo" />
               </a>
-              <p>
-                Necessary, making this the first true generator on the Internet.
-                It uses a dictionary of over 200 Latin words, combined with
-              </p>
               <motion.div className="footer_social">
                 <a href="#">
                   <FaFacebook className="fa fa-facebook" aria-hidden="true" />

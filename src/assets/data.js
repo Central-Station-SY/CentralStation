@@ -5,7 +5,6 @@ export const data = {
       categoryName_en: "APPETIZERS",
       categoryName_ar: "المقبلات",
       categoryImage: "POTATO WEDGES-min.png", // APPETIZERS image
-      // categoryDescription_en: "All Appetizers",
       items: [
         {
           id: 1,
@@ -55,7 +54,7 @@ export const data = {
           id: 6,
           name: "POTATO WEDGES",
           description_en:
-            "Larg crisp slices of potato wedges, served with ketchup for dipping.",
+            "Large crisp slices of potato wedges, served with ketchup for dipping.",
           description_ar: "قطع كبيرة من بطاطا المقرمشة, كتشب",
           price: "30,000 SP",
           image: "POTATO WEDGES-min.png",
@@ -73,7 +72,7 @@ export const data = {
           id: 1,
           name: "CHICKEN WINGS",
           description_en:
-            "5 Bone-in wings, breaded to perfection. crispy, crunchy and delicious (BBQ, Buffalo, Honey Musterd).",
+            "5 Bone-in wings, breaded to perfection. crispy, crunchy and delicious (BBQ, Buffalo, Honey Mustard).",
           description_ar:
             "5 قطع من جوانح الدجاج المقلية و المقرمشة, مع صوص حسب الاختيار ( باربكيو, بوفالو, هاني ماسترد).",
           price: "55,000 SP",
@@ -83,7 +82,7 @@ export const data = {
           id: 2,
           name: "CHICKEN STRIPS",
           description_en:
-            "4 Hand breaded chicken fillet strips, the crispiest in town (BBQ, Buffalo ,Honey Musterd).",
+            "4 Hand breaded chicken fillet strips, the crispiest in town (BBQ, Buffalo ,Honey Mustard).",
           description_ar:
             "4 قطع تشكن ستربس المقلية و المقرمشة, مع  صوص حسب الاختيار ( باربكيو, بوفالو, هاني ماستر).",
           price: "35,000 SP",
@@ -307,7 +306,7 @@ export const data = {
         },
         {
           id: 3,
-          name: "HONY MUSTARD HOT DOG",
+          name: "HONEY MUSTARD HOT DOG",
           description_en:
             "Hot dog topped with honey mustard sauce, mayo, pickles and chips sticks.",
           description_ar:
@@ -336,7 +335,7 @@ export const data = {
       items: [
         {
           id: 1,
-          name: "CHICKEN CESAR SALAD",
+          name: "CHICKEN CAESAR SALAD",
           description_en:
             "Fresh romaine lettuce, tossed with our famous Caesar dressing, parmesan cheese, croutons, cherry tomatoes,  and topped with juicy tender chicken breast.",
           description_ar:
@@ -346,7 +345,7 @@ export const data = {
         },
         {
           id: 2,
-          name: "CESAR SALAD",
+          name: "CAESAR SALAD",
           description_en:
             "Fresh romaine lettuce, tossed with our famous Caesar dressing, parmesan cheese, croutons and cherry tomatoes.",
           description_ar:

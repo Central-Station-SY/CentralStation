@@ -125,7 +125,7 @@ export default function Contact() {
                     className="form-control nice-select wide"
                     name="description"
                     id="description"
-                    placeholder="description"
+                    placeholder="Description"
                     style={{ height: "100px" }}
                   ></textarea>
                 </motion.div>
