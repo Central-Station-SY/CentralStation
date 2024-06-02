@@ -35,7 +35,7 @@ function CategoryCard({
             <h5
               style={{
                 direction: textDirection,
-                fontFamily: lang ? "inherit" : "Cairo",
+                fontFamily: lang ? "VINTAGE COLLEGE DEPT_DEMO_outli" : "Cairo",
               }}
             >
               {categoryName}
