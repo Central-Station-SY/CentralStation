@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CentralStation/static/css/main.b3bc3ea7.css",
-    "main.js": "/CentralStation/static/js/main.df8c45a6.js",
-    "static/js/453.9d9738ac.chunk.js": "/CentralStation/static/js/453.9d9738ac.chunk.js",
+    "main.js": "/CentralStation/static/js/main.fd8f3e51.js",
+    "static/js/453.a6a97343.chunk.js": "/CentralStation/static/js/453.a6a97343.chunk.js",
     "static/media/background.jpeg": "/CentralStation/static/media/background.3d52347438753a3dd61f.jpeg",
     "static/media/CHILI CHESSY DOG-min.png": "/CentralStation/static/media/CHILI CHESSY DOG-min.b6bc679ed5d540c916e2.png",
     "static/media/HONY MUSTARD HOT DOG-min.png": "/CentralStation/static/media/HONY MUSTARD HOT DOG-min.38037a234d44371afb1c.png",
@@ -43,11 +43,11 @@
     "static/media/VINTAGE_COLLEGE_DEPT_DEMO_OUTLINE.OTF": "/CentralStation/static/media/VINTAGE_COLLEGE_DEPT_DEMO_OUTLINE.4bcccbd72a0bd81eaffe.OTF",
     "index.html": "/CentralStation/index.html",
     "main.b3bc3ea7.css.map": "/CentralStation/static/css/main.b3bc3ea7.css.map",
-    "main.df8c45a6.js.map": "/CentralStation/static/js/main.df8c45a6.js.map",
-    "453.9d9738ac.chunk.js.map": "/CentralStation/static/js/453.9d9738ac.chunk.js.map"
+    "main.fd8f3e51.js.map": "/CentralStation/static/js/main.fd8f3e51.js.map",
+    "453.a6a97343.chunk.js.map": "/CentralStation/static/js/453.a6a97343.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b3bc3ea7.css",
-    "static/js/main.df8c45a6.js"
+    "static/js/main.fd8f3e51.js"
   ]
 }
