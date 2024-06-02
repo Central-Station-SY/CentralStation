@@ -38,6 +38,12 @@ const Modal = ({ id, name, description, price, image, close, lang }) => {
       onClick={(e) => e.stopPropagation()}
       key={id}
     >
+      <motion.img
+        className="modal__image"
+        alt="real estate mansion"
+        src={require("../assets/images/items/" + image)}
+        variants={imageVariants}
+      ></motion.img>
       <motion.button
         className="modal__close-wrapper"
         whileHover={{ scale: 1.2 }}
@@ -45,12 +51,6 @@ const Modal = ({ id, name, description, price, image, close, lang }) => {
       >
         <IoCloseCircleOutline className="modal__close-icon" />
       </motion.button>
-      <motion.img
-        className="modal__image"
-        alt="real estate mansion"
-        src={require("../assets/images/" + image)}
-        variants={imageVariants}
-      ></motion.img>
       <motion.div className="modal__info" variants={modalInfoVariants}>
         <motion.div className="modal__row" variants={modalRowVariants}>
           <span className="modal__price">{price}</span>

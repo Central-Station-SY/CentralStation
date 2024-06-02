@@ -13,9 +13,7 @@ export default function Menu() {
   const [showItem, setShowItem] = useState(false);
   const [showCategory, setShowCategory] = useState(true);
   const [langEn, setLangEn] = useState(true);
-  const [activeButton, setActiveButton] = useState(
-    langEn ? "English" : "Arabic"
-  );
+  const [activeButton, setActiveButton] = useState("English");
   const itemsPerPage = 50;
   const containerRef = useRef(null); // Ref for the main container
   const firstItemRef = useRef(null); // Ref for the first item
@@ -31,22 +29,18 @@ export default function Menu() {
   useEffect(() => {
     setCategory(data.menu.map((category) => category));
     setCurrentPage(1); // Reset current page to 1 when category changes
+  }, []);
+
+  useEffect(() => {
     if (isActiveCategory !== null) {
-      const selectedCategoryEn = data.menu.find(
-        (category) => category.categoryName_en === isActiveCategory
-      );
-      const selectedCategoryAr = data.menu.find(
-        (category) => category.categoryName_ar === isActiveCategory
+      const selectedCategory = data.menu.find(
+        (category) =>
+          category.categoryName_en === isActiveCategory ||
+          category.categoryName_ar === isActiveCategory
       );
 
-      if (langEn) {
-        if (selectedCategoryEn) {
-          setCard(selectedCategoryEn.items);
-        }
-      } else {
-        if (selectedCategoryAr) {
-          setCard(selectedCategoryAr.items);
-        }
+      if (selectedCategory) {
+        setCard(selectedCategory.items);
       }
 
       setShowCategory(false);
@@ -62,7 +56,7 @@ export default function Menu() {
       setShowItem(false);
       window.history.pushState({}, "", "");
     }
-  }, [isActiveCategory]);
+  }, [isActiveCategory, langEn]);
 
   useEffect(() => {
     const handlePopState = (event) => {
@@ -89,6 +83,16 @@ export default function Menu() {
     }
   }, [isActiveCategory, currentPage]); // Run effect when isActiveCategory or currentPage changes
 
+  const handleLanguageChange = (lang) => {
+    setLangEn(lang === "English");
+    setActiveButton(lang);
+    setIsActiveCategory(null); // Reset the active category when language changes
+    setCard([]); // Reset card state when language changes
+    setShowCategory(true);
+    setShowItem(false);
+    window.history.pushState({}, "", ""); // Reset URL
+  };
+
   return (
     <motion.div
       id="Menu"
@@ -106,9 +110,6 @@ export default function Menu() {
           </motion.div>
           <motion.div
             style={{
-              // display: "-webkit - box",
-              // display: "-webkit - box",
-              // display: "-ms - flexbox",
               display: "flex",
               justifyContent: "center",
               marginTop: "45px",
@@ -132,14 +133,7 @@ export default function Menu() {
                     ? "0px 0px 25px rgba(239, 241, 220, 0.5)"
                     : "none",
               }}
-              // whileHover={{ scale: 1.1 }}
-              // whileTap={{ scale: 0.9 }}
-              onClick={() => {
-                if (langEn) {
-                  setLangEn(false);
-                  setActiveButton("Arabic");
-                }
-              }}
+              onClick={() => handleLanguageChange("Arabic")}
             >
               Arabic
             </motion.button>
@@ -161,14 +155,7 @@ export default function Menu() {
                     ? "0px 0px 25px rgba(239, 241, 220, 0.5)"
                     : "none",
               }}
-              // whileHover={{ scale: 1.1 }}
-              // whileTap={{ scale: 0.9 }}
-              onClick={() => {
-                if (!langEn) {
-                  setLangEn(true);
-                  setActiveButton("English");
-                }
-              }}
+              onClick={() => handleLanguageChange("English")}
             >
               English
             </motion.button>
@@ -228,7 +215,7 @@ export default function Menu() {
                     ))}
                   </motion.div>
                 </motion.div>
-                <div className="btn-box">
+                {/* <div className="btn-box">
                   {Array(Math.ceil(card.length / itemsPerPage))
                     .fill()
                     .map((_, index) => (
@@ -236,7 +223,7 @@ export default function Menu() {
                         {index + 1}
                       </button>
                     ))}
-                </div>
+                </div> */}
               </motion.div>
             ) : null}
           </motion.div>

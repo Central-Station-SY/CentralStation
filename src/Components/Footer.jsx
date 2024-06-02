@@ -23,7 +23,7 @@ const Footer = () => {
               initial={{
                 opacity: 0,
                 // if odd index card,slide from right instead of left
-                y: 3 % 2 === 0 ? 0 : 300,
+                y: 3 % 2 === 0 ? 0 : '60%',
               }}
               whileInView={{
                 opacity: 1,
@@ -40,6 +40,7 @@ const Footer = () => {
                 <a
                   target="_blank"
                   href="https://www.google.com/maps/@33.5153642,36.3173504,21z?entry=ttu"
+                  rel="noreferrer"
                 >
                   <CiLocationOn
                     className="fa fa-map-marker"
@@ -65,7 +66,7 @@ const Footer = () => {
             initial={{
               opacity: 0,
               // if odd index card,slide from right instead of left
-              y: 3 % 2 === 0 ? 0 : 300,
+              y: 3 % 2 === 0 ? 0 : '60%',
             }}
             whileInView={{
               opacity: 1,
@@ -111,7 +112,7 @@ const Footer = () => {
             initial={{
               opacity: 0,
               // if odd index card,slide from right instead of left
-              y: 3 % 2 === 0 ? 0 : 300,
+              y: 3 % 2 === 0 ? 0 : '60%',
             }}
             whileInView={{
               opacity: 1,

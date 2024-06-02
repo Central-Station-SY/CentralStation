@@ -27,13 +27,14 @@ function CategoryCard({
       key={id}
       className="col-sm-6 col-lg-4"
       onClick={() => setIsActiveCategory(categoryName)}
-      initial={glowVariants.initial}
-      whileHover={glowVariants.hover}
     >
       <motion.div variants={glowVariants} className="box">
         <motion.div>
           <motion.div className="img-box">
-            <img src={require("../assets/images/items/" + categoryImage)} alt="" />
+            <img
+              src={require("../assets/images/items/" + categoryImage)}
+              alt=""
+            />
           </motion.div>
           <motion.div className="detail-box">
             <h5
@@ -45,7 +46,6 @@ function CategoryCard({
             >
               {categoryName}
             </h5>
-            {/* <p>{categoryDescription}</p> */}
             <button
               class="btn"
               style={{

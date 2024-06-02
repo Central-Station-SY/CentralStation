@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useRef } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const customMarker = new L.icon({
   iconUrl: "https://unpkg.com/leaflet@1.5.1/dist/images/marker-icon.png",
@@ -11,6 +13,44 @@ const customMarker = new L.icon({
 });
 
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_1e28toq", "template_g00yk9e", form.current, {
+        publicKey: "YEbS7uza8DR4S6p9U",
+      })
+      .then(
+        (res) => {
+          if (res.status === 200 && res.text === "OK") {
+            Swal.fire({
+              icon: "success",
+              text: "sent successfully , Thank you",
+              timer: 2000,
+              background: "#221F1F",
+              color: "#EFF1DC",
+            });
+
+            form.current.name.value = "";
+            form.current.phoneNumber.value = "";
+            form.current.email.value = "";
+            form.current.description.value = "";
+          }
+        },
+        (error) => {
+          Swal.fire({
+            icon: "error",
+            text: "something wrong , try agian",
+            timer: 2000,
+            background: "#221F1F",
+            color: "#EFF1DC",
+          });
+        }
+      );
+  };
+
   return (
     <motion.section id="Contact" className="book_section layout_padding">
       <motion.div className="container">
@@ -18,7 +58,7 @@ export default function Contact() {
           initial={{
             opacity: 0,
             // if odd index card,slide from right instead of left
-            x: 3 % 2 === 0 ? 0 : -300,
+            x: 3 % 2 === 0 ? 0 : '-60%',
           }}
           whileInView={{
             opacity: 1,
@@ -38,7 +78,7 @@ export default function Contact() {
             initial={{
               opacity: 0,
               // if odd index card,slide from right instead of left
-              x: 3 % 2 === 0 ? 0 : -300,
+              x: 3 % 2 === 0 ? 0 : '-60%',
             }}
             whileInView={{
               opacity: 1,
@@ -52,11 +92,13 @@ export default function Contact() {
             className="col-md-6"
           >
             <motion.div className="form_container">
-              <form action="">
+              <form ref={form} onSubmit={sendEmail}>
                 <motion.div>
                   <input
                     type="text"
                     className="form-control"
+                    name="name"
+                    id="name"
                     placeholder="Your Name"
                   />
                 </motion.div>
@@ -64,6 +106,8 @@ export default function Contact() {
                   <input
                     type="text"
                     className="form-control"
+                    name="phoneNumber"
+                    id="phoneNumber"
                     placeholder="Phone Number"
                   />
                 </motion.div>
@@ -71,19 +115,19 @@ export default function Contact() {
                   <input
                     type="email"
                     className="form-control"
+                    name="email"
+                    id="email"
                     placeholder="Your Email"
                   />
                 </motion.div>
                 <motion.div>
-                  <select className="form-control nice-select wide">
-                    <option value="" disabled selected>
-                      Reason
-                    </option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                  </select>
+                  <textarea
+                    className="form-control nice-select wide"
+                    name="description"
+                    id="description"
+                    placeholder="description"
+                    style={{ height: "100px" }}
+                  ></textarea>
                 </motion.div>
                 <motion.div className="btn_box">
                   <button>send</button>
@@ -95,7 +139,7 @@ export default function Contact() {
             initial={{
               opacity: 0,
               // if odd index card,slide from right instead of left
-              y: 3 % 2 === 0 ? 0 : 300,
+              y: 3 % 2 === 0 ? 0 : '60%',
             }}
             whileInView={{
               opacity: 1,
@@ -122,10 +166,7 @@ export default function Contact() {
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   />
-                  <Marker
-                    position={[33.515364, 36.317377]}
-                    icon={customMarker}
-                  >
+                  <Marker position={[33.515364, 36.317377]} icon={customMarker}>
                     <Popup>We're waiting for you 😊</Popup>
                   </Marker>
                 </MapContainer>

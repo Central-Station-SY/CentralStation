@@ -28,7 +28,7 @@ const Main = () => {
                       initial={{
                         opacity: 0,
                         // if odd index card,slide from right instead of left
-                        y: 3 % 2 === 0 ? 0 : 300,
+                        y: 3 % 2 === 0 ? 0 : '60%',
                       }}
                       whileInView={{
                         opacity: 1,
@@ -42,7 +42,9 @@ const Main = () => {
                     >
                       <motion.h1>CENTRAL STATION</motion.h1>
                       <motion.p>
-                        Food Always Right
+                        For fans of flavor, fun, and sports. Make central
+                        station your home base for fantastic food and beverages,
+                        because we're more than just a restaurant.
                       </motion.p>
                     </motion.div>
                   </motion.div>
