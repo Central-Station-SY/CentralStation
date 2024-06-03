@@ -23,7 +23,7 @@ function CategoryCard({
       className="col-sm-6 col-lg-4"
       onClick={() => setIsActiveCategory(categoryName)}
     >
-      <motion.div variants={glowVariants} className="box">
+      <motion.div className="box">
         <motion.div>
           <motion.div className="img-box">
             <img

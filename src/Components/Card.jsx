@@ -43,9 +43,6 @@ function Card({
   return (
     <motion.div
       key={id}
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: 1 }}
-      // transition={{ duration: 1, delay: id + 1 }}
       className="col-sm-6 col-lg-4"
       style={{ fontFamily: lang ? "inherit" : "'Cairo', sans-serif" }}
     >

@@ -86,9 +86,9 @@ export default function Menu() {
     <motion.div
       id="Menu"
       className="main_div"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
+      // transition={{ duration: 2 }}
       ref={containerRef}
     >
       <motion.div className="food_section layout_padding-bottom">
