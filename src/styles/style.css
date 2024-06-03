@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
-/* @import url("../assets/fonts/VINTAGE_COLLEGE_DEPT_DEMO_OUTLINE.OTF"); */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
 
 @font-face {
   font-family: 'VINTAGE COLLEGE DEPT_DEMO_outli';
@@ -11,6 +12,7 @@
   }
 
 body {
+  touch-action: pan-x pan-y;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 15px;
@@ -24,8 +26,12 @@ body {
   transition: background-image 0.5s ease-in-out;
 }
 
+input, select, textarea {
+  font-size: 16px; /* Prevent zoom on input focus */
+}
+
 .layout_padding {
-  padding: 90px 0;
+  padding: 23% 0;
   height: 785px;
 }
 
@@ -478,7 +484,7 @@ a:focus {
 }
 
 .offer_section .box .detail-box h5 {
-  font-family: "Roboto", sans-serif;
+  font-weight: lighter; 
   font-size: 24px;
   margin: 0;
 }
@@ -544,6 +550,44 @@ a:focus {
   border-radius: 15px;
   overflow: hidden;
   background: linear-gradient(to bottom, #f1f2f3 25px, #000000 25px);
+
+  .btn {
+    width: 180px;
+    height: 60px;
+    border-radius: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #851619;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+    border-radius: 60px;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: #EF8621;
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+    color: #EFF1DC;
+    font-size: 18px;
+    font-weight: 100;
+  }
 }
 
 .food_section .box .img-box {
@@ -557,17 +601,24 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 215px;
+  /* height: 215px; */
   border-radius: 0 0 0 45px;
   margin: -1px;
-  padding: 25px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .food_section .box .img-box img {
-  max-width: 100%;
-  max-height: 145px;
+  /* max-width: 100%;
+  max-height: 145px; */
   -webkit-transition: all .2s;
   transition: all .2s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .food_section .box h5 {
   font-family: "VINTAGE COLLEGE DEPT_DEMO_outli";
@@ -602,12 +653,6 @@ a:focus {
   margin-top: 10px;
 }
 
-/* .food_section .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-} */
-
 .food_section .box .options {
   color: #EFF1DC;
   display: -webkit-box;
@@ -616,6 +661,9 @@ a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.flex-1 {
+  flex: 1 0 auto;
 }
 
 .food_section .box .options a {
@@ -671,13 +719,36 @@ a:focus {
   background-color: #e69c00;
 }
 
+.outer {
+  height:100%;
+}
+
 .about_section {
-  /* background: #222831; */
-  background-image: url('../assets/images/about.jpg');
-  background-size: cover;
-  background-position: center; 
   color: #EFF1DC;
-  background-repeat :repeat-x
+  height:200%;
+  width:100%;
+  -webkit-animation:mymove 15s linear infinite;
+  /* Safari and Chrome */
+  animation:mymove 15s linear infinite;
+  background-image: url('../assets/images/about.jpg');
+  background-size: 230% 107%;
+}
+
+@-webkit-keyframes mymove {
+  from {
+      background-position: -80% 0%;
+  }
+  to {
+      background-position: -200% 0;
+  }
+}
+@keyframes mymove {
+  from {
+      background-position: -80% 0%;
+  }
+  to {
+      background-position: -200% 0%;
+  }
 }
 
 .about_section .row {
@@ -1082,5 +1153,5 @@ a:focus {
 
 .footer_section .footer-info p a {
   color: inherit;
-}
+} 
 /* sourceMappingURL=style.css.map  */
