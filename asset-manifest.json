@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CentralStation/static/css/main.ae710087.css",
+    "main.css": "/CentralStation/static/css/main.283afc21.css",
     "main.js": "/CentralStation/static/js/main.4e61ae93.js",
     "static/js/453.a6a97343.chunk.js": "/CentralStation/static/js/453.a6a97343.chunk.js",
     "static/media/background.jpeg": "/CentralStation/static/media/background.3d52347438753a3dd61f.jpeg",
@@ -42,12 +42,12 @@
     "static/media/train.jpg": "/CentralStation/static/media/train.5614d74a80562919ac47.jpg",
     "static/media/VINTAGE_COLLEGE_DEPT_DEMO_OUTLINE.OTF": "/CentralStation/static/media/VINTAGE_COLLEGE_DEPT_DEMO_OUTLINE.4bcccbd72a0bd81eaffe.OTF",
     "index.html": "/CentralStation/index.html",
-    "main.ae710087.css.map": "/CentralStation/static/css/main.ae710087.css.map",
+    "main.283afc21.css.map": "/CentralStation/static/css/main.283afc21.css.map",
     "main.4e61ae93.js.map": "/CentralStation/static/js/main.4e61ae93.js.map",
     "453.a6a97343.chunk.js.map": "/CentralStation/static/js/453.a6a97343.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae710087.css",
+    "static/css/main.283afc21.css",
     "static/js/main.4e61ae93.js"
   ]
 }
