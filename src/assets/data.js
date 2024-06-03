@@ -44,7 +44,7 @@ export const data = {
         },
         {
           id: 5,
-          name: "CHESSY FRIES",
+          name: "CHEESY FRIES",
           description_en: "Crisp fries, served with melted cheddar.",
           description_ar: "بطاطا مقرمشة تقدم مع جبنة الشيدر السائلة.",
           price: "35,000 SP",
@@ -287,7 +287,7 @@ export const data = {
       items: [
         {
           id: 1,
-          name: "CHESSY WRAP HOT DOG",
+          name: "CHEESY WRAP HOT DOG",
           description_en:
             "Hot dog in tortilla bread topped with liquid cheddar cheese, corn, ketchup, mayo and pickles.",
           description_ar:
@@ -316,7 +316,7 @@ export const data = {
         },
         {
           id: 4,
-          name: "CHILI CHESSY DOG",
+          name: "CHILI CHEESY DOG",
           description_en:
             "hotdog with avocado sauce, chips sticks, iceberg lettuce, liquid cheddar cheese, ketchup and signature chili sauce.",
           description_ar:
