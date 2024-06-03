@@ -1154,4 +1154,18 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 } 
+body {
+  transition: all 0.5s ease-in-out;
+}
+
+.layout_padding, .layout_padding2, .layout_padding2-top, .layout_padding2-bottom, .layout_padding-top, .layout_padding-bottom {
+  transition: all 0.5s ease-in-out;
+}
+
+.hero_area, .food_section .box, .offer_section .box, .client_section .box {
+  transition: all 0.5s ease-in-out;
+}
 /* sourceMappingURL=style.css.map  */
+
+
+/* Misc styles */
