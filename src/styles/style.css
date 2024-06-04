@@ -527,7 +527,8 @@ a:focus {
 }
 
 .food_section .filters_menu {
-  padding: 0 6% 0 6%;
+  padding: 0;
+  /* padding: 0 6% 0 6%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,37 +602,42 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* height: 215px; */
+  width: 100%;
+  height: 100%;  
   border-radius: 0 0 0 45px;
+  margin: -1px;
+  padding: 0;
+  /* border-radius: 0 0 0 45px;
   margin: -1px;
   padding: 0;
   width: 100%;
   height: 100%;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .food_section .box .img-box img {
-  /* max-width: 100%;
-  max-height: 145px; */
+  max-width: 100%;
+  max-height: 100%;
   -webkit-transition: all .2s;
+  transition: all .2s;
+  /* -webkit-transition: all .2s;
   transition: all .2s;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; */
 }
 .food_section .box h5 {
   font-family: "VINTAGE COLLEGE DEPT_DEMO_outli";
   font-weight: lighter;
   color: #851619;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .food_section .box .detail-box {
   padding: 25px;
-  height: 200px; /* Fixed height */
-  overflow-y: auto; /* Scrollbar for overflow text */
+  height: 11rem; 
 }
 
 .food_section .box .detail-box h4 {
@@ -662,9 +668,9 @@ a:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.flex-1 {
+/* .flex-1 {
   flex: 1 0 auto;
-}
+} */
 
 .food_section .box .options a {
   width: 40px;
