@@ -1,13 +1,13 @@
-import { useEffect } from "react";
+import { lazy, useEffect } from "react";
 import "./styles/style.css";
 import "./styles/responsive.css";
 import "./App.css";
-import Main from "./Components/Main";
-import Menu from "./Components/Menu";
-import About from "./Components/About";
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import Contact from "./Components/Contact";
+const Main = lazy(() => import("./Components/Main"));
+const Menu = lazy(() => import("./Components/Menu"));
+const About = lazy(() => import("./Components/About"));
+const Footer = lazy(() => import("./Components/Footer"));
+const Header = lazy(() => import("./Components/Header"));
+const Contact = lazy(() => import("./Components/Contact"));
 
 function App() {
   useEffect(() => {

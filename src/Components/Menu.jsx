@@ -153,10 +153,10 @@ export default function Menu() {
           <motion.div className="filters_menu">
             {showItems ? (
               <motion.div>
-                <motion.div className="filters_menu">
+                {/* <motion.div className="filters_menu"> */}
                   <motion.div
                     onClick={() => setIsActiveCategory(null)}
-                    style={{ paddingRight: "110%" }}
+                    // style={{ paddingRight: "110%" }}
                   >
                     <FaArrowCircleLeft size={"50px"} />
                   </motion.div>
@@ -171,7 +171,7 @@ export default function Menu() {
                     ))}
                   </motion.div>
                 </motion.div>
-              </motion.div>
+              // </motion.div>
             ) : (
               <motion.div className="row grid glow">
                 {categories.map((item, index) => (

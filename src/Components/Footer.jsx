@@ -133,7 +133,7 @@ const Footer = () => {
             <br />
             <br />
             &copy; <span id="displayYear">{currentYear}</span> Distributed By
-            <a href="#" target="_blank">
+            <a href="http://www.seek-higher-things.com" target="_blank">
               {" "}
               Seek Higher Things
             </a>
