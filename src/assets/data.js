@@ -185,7 +185,7 @@ export const data = {
           description_ar:
             "صدر دجاج مشوي , حبش مدخن, خس ايسبرغ, بندورة, مايونيز, مخلل, جبنة التشيدر تقدم بخبز التوستز",
           price: "46,000 SP",
-          image: "CHICKEN WRAP-min.png", // not ready
+          image: "favicon.png", // not ready
         },
       ],
     },
@@ -248,7 +248,7 @@ export const data = {
         },
         {
           id: 6,
-          name: "STICK SANDWICH",
+          name: "STEACK SANDWICH",
           description_en:
             "80g Fillet steak with honey mustard sauce, onion, kashkaval cheese, Rocca, soya sauce, fresh mushrooms and mayo.",
           description_ar:
@@ -274,7 +274,7 @@ export const data = {
           description_ar:
             "120 غرام برغر من اللحم في شريحتين مقرمشتين من خبز التوست، بندورة، جبنة قشقوان، حبش مدخن، خس آيسبرج ومخلل.",
           price: "60,000 SP",
-          image: "CHESSY BEEF TOAST-min.png", // not ready
+          image: "favicon.png", // not ready
         },
       ],
     },
@@ -391,7 +391,7 @@ export const data = {
           description_ar:
             "معكرونة مع صوص كوكتيل، شرائح زيتون أسود، جزر، هوت دوغ، فلفل أحمر وأخضر.",
           price: "30,000 SP",
-          image: "ROCCA MUSHROOM SALAD-min.png", // not ready
+          image: "favicon.png", // not ready
         },
       ],
     },
